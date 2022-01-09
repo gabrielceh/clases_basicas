@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Clase 3</title>
+  </head>
+  <body>
+    <h1>Clase 3: Tablas</h1>
+    <p>
+      Para trabajar con tablas usamos la etiqueta table. <br />
+      Las filas se declaran mediante la etiqueta tr (table row). <br />
+      Las columas se declaran mediante la etiqueta td (table data).
+    </p>
+
+    <p>La estructura para las tablas es que los td van dentro de los tr</p>
+
+    <table border="1">
+      <tr>
+        <td>1,1</td>
+        <td>1,2</td>
+      </tr>
+      <tr>
+        <td>2,1</td>
+        <td>2,2</td>
+      </tr>
+    </table>
+
+    <h2>Cabecera y cuerpo de las tablas</h2>
+    <p>
+      Hay 2 etiquetas para definir la cabecera y el cuerpo de una tabla. <br />
+      thead: para la cabecera. <br />
+      tbody: para el cuerpo.
+    </p>
+    <p>
+      Para definir las filas en el thead usamos tr. <br />
+      Para definir las columnas en el thead usamos th.
+    </p>
+
+    <p>
+      Para definir las filas en el tbody usamos tr. <br />
+      Para definir las columnas en el tbody usamos td.
+    </p>
+
+    <table border="2">
+      <thead>
+        <tr>
+          <th>Nombre</th>
+          <th>Apellido</th>
+          <th>Edad</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Gabriel</td>
+          <td>Cervantes</td>
+          <td>31</td>
+        </tr>
+        <tr>
+          <td>Sandra</td>
+          <td>Mangas</td>
+          <td>31</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h2>Titulo para una tabla</h2>
+    <p>Para colocar un titulo a una tabla usamos la etiqueta caption(titulo)</p>
+
+    <table border="1">
+      <caption>
+        Paises y capitales
+      </caption>
+      <thead>
+        <tr>
+          <th>País</th>
+          <th>Capital</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Colombia</td>
+          <td>Bogotá</td>
+        </tr>
+        <tr>
+          <td>México</td>
+          <td>Ciudaad de México</td>
+        </tr>
+        <tr>
+          <td>Chile</td>
+          <td>Santiago de Chile</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h2 align="center">Combinacion de celdas</h2>
+    <p align="center">
+      Para combinar una o varias columnas usamos la propiedad o atributo colspan. <br />
+      Este atributo recibe un número que indica la cantidad de columnas a combinar
+    </p>
+
+    <p>
+      Para combinar una o varias filas usamos la propiedad rowspan. <br />
+      Este atributo recibe un número que indica la cantidad de filas a combinar
+    </p>
+
+    <table border="1">
+      <caption>
+        Ventas
+      </caption>
+      <thead>
+        <tr>
+          <th colspan="3">Ventas del mes</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td rowspan="4">Productos</td>
+        </tr>
+        <tr>
+          <td>Libretas</td>
+          <td>200 und</td>
+        </tr>
+        <tr>
+          <td>Lápices</td>
+          <td>400 und</td>
+        </tr>
+        <tr>
+          <td>Lápices de colores</td>
+          <td>100 und</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h2>Estilos a tablas</h2>
+
+    <table border="1" align="center">
+      <caption>
+        Ventas
+      </caption>
+      <thead>
+        <tr>
+          <th colspan="3">Ventas del mes</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td rowspan="4">Productos</td>
+        </tr>
+        <tr align="center">
+          <td bgcolor="tomato">Libretas</td>
+          <td bgcolor="emerald">200 unidades</td>
+        </tr>
+        <tr align="center">
+          <td bgcolor="#999">Lápices</td>
+          <td>400 und</td>
+        </tr>
+        <tr align="center">
+          <td>Lápices de colores</td>
+          <td>100 und</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+  </body>
+</html>
