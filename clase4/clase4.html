@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form</title>
+  </head>
+  <body>
+    <h1>Formularios: form</h1>
+    <p>Nos sirven para recolectar información del usuario.</p>
+    <p>Para definir un formulario usamos la etiqueta form</p>
+    <form action=""></form>
+
+    <h2>Elementos</h2>
+    <p>Las etiquetas para crear elementos de formularios son input, select, textarea, button</p>
+    <form action="">
+      <input type="text" /><br />
+      <input type="number" /><br />
+      <input type="email" /><br />
+      <input type="password" /><br />
+      <input type="checkbox" />Si <br />
+      <textarea></textarea>
+      <button>Enviar</button>
+    </form>
+
+    <h2>Atributos</h2>
+    <h4>Method</h4>
+    <p>Especifica el método HTTP (GET, POST)</p>
+    <form action="" method="POST"></form>
+    <form action="" method="GET"></form>
+
+    <h4>Name</h4>
+    <p>
+      Es un atributo importante para el envio de formularios. Es el nombre que toma el input para
+      capturar el dato y enviarlo
+    </p>
+    <form action="">
+      <!--El id es el vinculo que une al label con el input mediante el for  -->
+      <label for="nombre">Nombre: </label>
+      <input type="text" name="nombre_usuario" id="nombre" /><br />
+
+      <label for="apellido">Apellido:</label>
+      <input type="text" name="apellido_usuario" id="apellido" /><br />
+
+      <label for="correo">Correo: </label>
+      <input type="email" name="email" id="correo" /><br />
+    </form>
+    <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+  </body>
+</html>
