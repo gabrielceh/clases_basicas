@@ -11,7 +11,7 @@
     <h3>text/password/number/email</h3>
     <form action="">
       type: text <input type="text" placeholder="texto" value="texto ejemplo" /> <br />
-      type: number <input type="number" placeholder="number" /> <br />
+      type: number <input type="number" placeholder="number" min="1" max="10" /> <br />
       type: email <input type="email" name="" id="" placeholder="email" /> <br />
       type: password
       <input type="password" name="" id="" placeholder="password" /><br />
@@ -114,6 +114,47 @@
           <option value="pepino">Pepino</option>
         </optgroup>
       </select>
+    </form>
+
+    <h3>Range</h3>
+    <form action="">
+      <input type="range" name="" id="rango" min="1" max="10" />
+    </form>
+
+    <h3>date/datetime-local/month/time/week</h3>
+    <form action="">
+      Fecha: <input type="date" name="" id="" /> <br />
+      Fecha Local: <input type="datetime-local" name="" id="" /> <br />
+      Mes: <input type="month" name="" id="" /> <br />
+      Hora: <input type="time" name="" id="" /> <br />
+      Semana: <input type="week" name="" id="" />
+    </form>
+
+    <h3>Color</h3>
+    <form action="">
+      <input type="color" name="" id="" />
+    </form>
+
+    <h3>url</h3>
+    <form action="">
+      <input type="url" />
+      <button>enviar</button>
+    </form>
+
+    <h3>Datalist</h3>
+    <form action="">
+      <input type="text" list="lista_frutas" placeholder="Frutas" />
+      <datalist id="lista_frutas">
+        <option value="manzana" label="Manzana" />
+        <option value="piña" label="🍍">Piña</option>
+        <option value="pera">Pera</option>
+      </datalist>
+
+      <input type="number" name="" id="" list="numeros" placeholder="numeros" />
+      <datalist id="numeros">
+        <option value="1">1</option>
+        <option value="10">10</option>
+      </datalist>
     </form>
 
     <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
