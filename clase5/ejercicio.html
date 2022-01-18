@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1> Registro Hoja de Vida </h1>
+    <form action="">
+        <label for="nombre">Nombre: </label> 
+        <input type="text" name="nombre_usuario" id="nombre" placeholder="Digite nombre"/> 
+
+        <label for="apellido">Apellido: </label>
+        <input type="text" name="apellido_usuario" id="apellido" placeholder="Digite apellido"/> 
+
+        <label for="edad">Edad: </label>
+        <input type="number" name="edad_usuario" id="edad" placeholder="Digite edad"/> <br /><br />
+
+        <label for="email">Email: </label>
+        <input type="email" name="email_usuario" id="email" placeholder="email" /> 
+
+        <label for="password">Password: </label>
+        <input type="password" name="password_usuario" id="password" placeholder="password" /> <br /><br />
+   
+    <h3> Seleccione el sexo: </h3>    
+        <input type="radio" name="sexo" value="f" />Mujer <br />
+        <input type="radio" name="sexo" value="m" />Hombre <br />
+        <input type="radio" name="sexo" value="o" />Otro <br />
+    
+    
+    <h3> Seleccione la región a la que pertenece: </h3>   
+        <input type="radio" name="region" id= "caribe" value="caribe" />
+        <label for="caribe">Caribe </label>
+        <input type="radio" name="region" value="pacifico" />Pacífico
+        <input type="radio" name="region" value="orinoquia" />Orinoquía <br />
+        <input type="radio" name="region" value="amazonia" />Amazonía 
+        <input type="radio" name="region" value="zona andina" />Zonas Andina
+        <input type="radio" name="region" value="insular" />Insular <br />
+
+
+    <h3> Estudios realizados:</h3>
+    <label for="estudios"></label>    
+    <select name="estudios[]" name="estudios_usuario" id="estudios" multiple size="5">
+        <option value="">---Seleccionar---</option>
+        <option value="sin estudios">Sin estudios</option>
+        <option value="preescolar y primaria">Preescolar y primaria</option>
+        <option value="Secundaria">Secundaria</option>
+        <option value="medio-superior">Medio-Superior</option>
+        <option value="profesional">Profesional</option>
+        <option value="postgrado">Postgrado</option>
+    </select>
+ 
+    <h3>Realice una breve descripción de su perfil profesional: </h3>
+    <label for="descripcion">Descripción perfil</label><br />
+      <textarea name="descripcion_perfil" id="descripcion" cols="100" rows="10"></textarea>
+    
+    <h3>Terminios y condiciones</h3>
+        <input type="checkbox" checked /> He leído y acepto los términos y condiciones de uso. Una de las mayores mentiras del siglo XXI. El que siempre haya aceptado los términos de uso tras una lectura detallada, siendo plenamente consciente de lo que aceptaba, que levante la mano.
+        Prácticamente a diario, instalamos aplicaciones en nuestros PCs y smartphones, nos registramos en redes sociales o servicios diversos. Todos estos proveedores de aplicaciones y servicios se cuidan mucho sus espaldas, y no se arriesgan a dejar resquicios legales.
+        Y nosotros, como usuarios, aceptamos sin saber lo que estamos aceptando.  <br />
+  
+    <br /><br />
+    
+        <button type="submit">Enviar</button> 
+        <button type="reset">Refrescar</button>
+    </form>
+
+    
+    <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+</body>
+</html>
