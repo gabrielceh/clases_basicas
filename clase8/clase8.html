@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Clase 8</title>
+  </head>
+  <body>
+    <header>
+      <h3>clase 8</h3>
+    </header>
+
+    <main>
+      <h1>Audio y video</h1>
+      <section>
+        <h2>Audio</h2>
+        <article>
+          <p>
+            Antes de html5 no habia un standar para reproducir audio en la web. <br />
+            La etiqueta Audio es un standar actual para la reproduccion de audios en la web
+          </p>
+          <audio src="../assets/Super_Mario_Bros.mp3" controls loop>
+            Este navegador no soporta este formarto de audio
+          </audio>
+
+          <audio controls>
+            <source src="../assets/Super_Mario_Bros.mp3" type="audio/mpeg" />
+            <!-- <source src="../assets//Super_Mario_Bros.ogg" type="audio/ogg"> -->
+            Este navegador no soporta este formarto de audio
+          </audio>
+        </article>
+      </section>
+
+      <section>
+        <h2>Video</h2>
+        <article>
+          <p>Es muy similar a la etiqueta audio</p>
+
+          <video src="../assets/videoEjemplo.mp4" controls width="200px">
+            Este navegador no soporta este formato de video
+          </video>
+
+          <video controls loop autoplay width="200px">
+            <source src="../assets/videoEjemplo.mp4" type="video/mp4" />
+          </video>
+        </article>
+      </section>
+    </main>
+  </body>
+</html>
