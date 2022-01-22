@@ -1,0 +1,21 @@
+h2 {
+  color: tomato;
+  text-align: center;
+}
+p {
+  background: #ccc;
+  font-size: 20px;
+  text-align: justify;
+}
+
+h2 {
+  color: gold;
+  text-align: right;
+  font-weight: 400;
+}
+
+hr {
+  background-color: pink;
+  width: 100px;
+  height: 2px;
+}
