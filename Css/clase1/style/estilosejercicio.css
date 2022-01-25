@@ -1,0 +1,49 @@
+nav {
+    background-color: #DAF7A6;
+    text-align: center;
+   
+  }
+
+h2 {
+    text-align: center;
+    font-weight: 700;
+    color:blueviolet;
+    font-size: 25px;
+    
+ }
+
+article {
+    background-color: #C0C0C0;
+      
+ }
+
+ol {
+    color:#F08080;
+    font-size: 15px;
+    font-weight: 400;
+          
+ }    
+
+ 
+ul {
+    color:#000000;
+    font-size: 15px;
+    font-weight: 300;
+
+ } 
+ 
+
+aside {
+    background-color: #5e3434;
+    font-size: 20px;
+    text-align: justify;
+ }
+  
+
+  
+a {
+    color:#0762BD;
+    font-size: 15px;
+    font-weight: 400;
+  }
+  
