@@ -1,0 +1,78 @@
+/* Esto es un comentario*/
+
+/*
+* Selector universal (*)
+*/
+* {
+  color: rgb(25, 56, 25);
+  font-size: 25px;
+  text-align: center;
+}
+
+/*
+* Selectores por etiqueta
+*/
+h2 {
+  color: royalblue;
+}
+p {
+  background-color: powderblue;
+}
+
+/*
+* Selectores por clase y id
+*/
+/*clase: usamos un punto(.) delante del nombre de la clase*/
+.h2-red {
+  color: red;
+  font-style: italic;
+}
+.p-blue {
+  color: blue;
+  background-color: transparent;
+}
+.unaclasecualquiera {
+  color: brown;
+}
+.span-texto {
+  font-style: italic;
+  font-weight: bold;
+  color: #aaa;
+}
+/*id: usamos un punto(#) delante del nombre del id
+NOTA: LOS ID NO SE PUEDEN REPETIR, SON UNICOS*/
+#h2-id {
+  background-color: yellowgreen;
+}
+/*
+* Selectores por atributos
+* usamos la etiqueta o clase acompañada de [atributo="valor"]
+*/
+.p-blue[saludo='hola'] {
+  background-color: #ccc;
+}
+input[type='email'] {
+  background-color: #ddd;
+  font-size: 30px;
+}
+/*
+* Selectores descendientes
+* se lee de derecha a izquierda
+*/
+div h2 {
+  color: brown;
+}
+div p span {
+  background-color: red;
+}
+.div-color p span {
+  color: white;
+}
+
+/*
+* Pseduclases
+*/
+.div-color p:hover {
+  color: rgb(253, 138, 253);
+  cursor: pointer;
+}
