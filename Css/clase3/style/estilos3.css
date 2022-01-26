@@ -1,0 +1,23 @@
+p {
+  background-color: black !important;
+  color: white;
+}
+
+#parrafo-id {
+  color: blueviolet;
+  background-color: tomato;
+}
+
+.parrafo-clase {
+  color: green;
+  background-color: lightblue;
+}
+
+[atributo='parrafo-1'] {
+  color: yellow;
+}
+
+p {
+  color: red;
+  background-color: #bbb;
+}
