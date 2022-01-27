@@ -1,0 +1,9 @@
+.form-container {
+  background-color: #ddd;
+}
+.form-container__input {
+  color: blueviolet;
+}
+.form-container__input--blue:focus {
+  background-color: blue;
+}
