@@ -1,0 +1,100 @@
+html {
+  font-size: 50px;
+}
+/* ************************** */
+.pixeles {
+  font-size: 32px;
+}
+.caja-pixeles {
+  background-color: tomato;
+  width: 300px;
+  height: 30px;
+}
+
+/* *********************************** */
+
+.pulgadas {
+  font-size: 0.35in;
+}
+.caja-pulgadas {
+  background-color: tomato;
+  width: 5in;
+  height: 0.3in;
+}
+
+/* *********************************** */
+.centimetros {
+  font-size: 1cm;
+}
+.caja-centimetros {
+  background-color: tomato;
+  width: 10cm;
+  height: 1cm;
+}
+
+/* *********************************** */
+.milimetros {
+  font-size: 10mm;
+}
+.caja-milimetros {
+  background-color: tomato;
+  width: 100mm;
+  height: 10mm;
+}
+
+/* *********************************** */
+.puntos {
+  font-size: 32pt;
+}
+.caja-puntos {
+  background-color: tomato;
+  width: 360pt;
+  height: 24pt;
+}
+
+/* *********************************** */
+.picas {
+  font-size: 2.6666pc;
+}
+.caja-picas {
+  background-color: tomato;
+  width: 30pc;
+  height: 2pc;
+}
+
+/* *********************************** */
+.porcentaje {
+  width: 50%;
+  height: 100px;
+  background-color: crimson;
+}
+.caja-porcentaje {
+  background-color: tomato;
+  width: 50%;
+  height: 16px;
+}
+
+/* *********************************** */
+
+.em {
+  width: 20em;
+  height: 10em;
+  background-color: crimson;
+}
+.caja-em {
+  font-size: 2em;
+  background-color: tomato;
+  width: 5em;
+  height: 3em;
+}
+/* ******************* */
+.rem {
+  width: 20rem;
+  height: 10rem;
+  background-color: crimson;
+}
+.caja-rem {
+  background-color: tomato;
+  width: 5rem;
+  height: 3rem;
+}
