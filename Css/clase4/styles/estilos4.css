@@ -7,3 +7,10 @@
 .form-container__input--blue:focus {
   background-color: blue;
 }
+
+
+.form-container__btn {
+  background-color: crimson;
+  color: white;
+
+}
