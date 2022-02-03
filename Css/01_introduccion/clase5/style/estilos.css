@@ -1,5 +1,8 @@
 html {
-  font-size: 50px;
+  font-size: 16px;
+}
+body {
+  font-size: 10px;
 }
 /* ************************** */
 .pixeles {
@@ -77,12 +80,13 @@ html {
 /* *********************************** */
 
 .em {
+  font-size: 20px;
   width: 20em;
   height: 10em;
   background-color: crimson;
 }
 .caja-em {
-  font-size: 2em;
+  /* font-size: 10px; */
   background-color: tomato;
   width: 5em;
   height: 3em;

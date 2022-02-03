@@ -1,0 +1,66 @@
+html {
+  font-size: 20px;
+}
+/* **************************Font-size*********************************** */
+.parrafo-x-small {
+  font-size: x-small;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.parrafo-small {
+  font-size: small;
+}
+.parrafo-medium {
+  font-size: medium;
+}
+.parrafo-large {
+  font-size: large;
+}
+.parrafo-larger {
+  font-size: larger;
+}
+.parrafo-x-large {
+  font-size: x-large;
+}
+.parrafo-pixel {
+  font-size: 15px;
+}
+.parrafo-rem {
+  font-size: 2rem;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+.contenedor-em {
+  font-size: 10px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.parrafo-em {
+  font-size: 2em; /*Depende del tamaño de letra de su contenedor*/
+}
+.parrafo-em-2 {
+  font-size: 5em; /*Depende del tamaño de letra de su contenedor*/
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* ***********************Font-style************************************** */
+.parrafo-normal {
+  font-style: normal;
+}
+.parrafo-italic {
+  font-style: italic;
+}
+.parrafo-oblique {
+  font-style: oblique;
+}
+.inherit-style {
+  font-style: italic;
+}
+.parrafo-inherit {
+  font-style: inherit; /*Hereda el font-style del padre*/
+}
+ul {
+  font-style: normal;
+}
+.ul-styled {
+  font-style: italic;
+  font-size: 0.7rem;
+  font-family: 'Courier New', Courier, monospace;
+}

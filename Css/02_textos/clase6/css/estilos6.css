@@ -1,0 +1,30 @@
+body {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Comfortaa', cursive;
+}
+p {
+  font-family: 'Times New Roman', Times, serif;
+}
+.ejemplo-font-family-1 {
+  font-family: 'Courier New', Courier, monospace;
+}
+.ejemplo-font-family-2 {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.ejemplo-font-family-3 {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva,
+    Verdana, sans-serif;
+}
+.ejemplo-font-family-4 {
+  font-family: 'Raleway', sans-serif;
+}
+.ejemplo-font-family-5 {
+  font-family: 'Roboto', Arial;
+}
