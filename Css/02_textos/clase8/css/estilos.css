@@ -1,0 +1,63 @@
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+.parrafo-normal {
+  font-weight: normal;
+}
+
+.parrafo-bold {
+  font-weight: bold;
+}
+
+.parrafo-bolder {
+  font-weight: bolder;
+}
+.parrafo-lighter {
+  font-weight: lighter;
+}
+
+.parrafo-100 {
+  font-weight: 100;
+}
+.parrafo-300 {
+  font-weight: 300;
+}
+.parrafo-400 {
+  font-weight: 400;
+}
+.parrafo-500 {
+  font-weight: 500;
+}
+.parrafo-700 {
+  font-weight: 700;
+}
+.parrafo-900 {
+  font-weight: 900;
+}
+/* ********************************** */
+.parrafo-normal-variant {
+  font-variant: normal;
+}
+.parrafo-small-caps-variant {
+  font-variant: small-caps;
+  font-weight: bold;
+  font-size: 1.5rem;
+  font-style: italic;
+}
+
+/* *********************************** */
+.color-ingles {
+  color: crimson;
+}
+.color-hexa {
+  color: #fe5145;
+}
+.color-rgb {
+  color: rgb(198, 32, 248);
+}
+.enlace {
+  color: rgb(56, 190, 56);
+  font-variant: small-caps;
+  font-weight: 700;
+}
