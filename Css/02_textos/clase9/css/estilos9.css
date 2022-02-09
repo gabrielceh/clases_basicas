@@ -1,0 +1,48 @@
+.parrafo-left {
+  text-align: left;
+}
+.parrafo-center {
+  font-weight: 700;
+  text-align: center;
+}
+.parrafo-right {
+  font-style: italic;
+  font-variant: small-caps;
+  text-align: right;
+}
+.parrafo-justify {
+  text-align: justify;
+}
+/* **************************************** */
+table {
+  height: 150px;
+}
+.vertical-top {
+  vertical-align: top;
+}
+.vertical-middle {
+  vertical-align: middle;
+}
+.vertical-bottom {
+  vertical-align: bottom;
+}
+.top-span {
+  vertical-align: super;
+}
+.middle-span {
+  vertical-align: baseline;
+}
+.bottom-span {
+  vertical-align: sub;
+}
+.div-color {
+  background-color: tomato;
+  height: 300px;
+  display: inline-table;
+}
+.div-color p {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+  font-size: 20px;
+}
