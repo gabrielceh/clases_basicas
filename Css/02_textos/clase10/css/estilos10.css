@@ -1,0 +1,35 @@
+.text-decoration-none {
+  text-decoration: none;
+}
+.text-decoration-none:hover {
+  text-decoration: underline;
+}
+
+.text-decoration-overline {
+  text-decoration: overline;
+}
+.text-decoration-underline {
+  text-decoration: underline;
+}
+.text-decoration-line-throught {
+  text-decoration: line-through;
+}
+.padre {
+  text-decoration: underline;
+}
+.text-decoration-inherit {
+  text-decoration: inherit;
+}
+.text-decoration-no-inherit {
+  text-decoration: line-through;
+}
+
+/* **************************************************** */
+.text-indent {
+  text-indent: 50px;
+}
+
+/* ****************************************************** */
+.shadow {
+  text-shadow: 5px 3px 3px blue;
+}
