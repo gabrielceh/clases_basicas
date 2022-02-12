@@ -1,0 +1,17 @@
+.text-transform-uppercase {
+  text-transform: uppercase;
+}
+.text-transform-lowercase {
+  text-transform: lowercase;
+}
+.text-transform-capitalize {
+  text-transform: capitalize;
+}
+/* ******************************** */
+.word-spacing-length {
+  word-spacing: 3px;
+}
+/* ******************************** */
+.letter-spacing-length {
+  letter-spacing: 5px;
+}
