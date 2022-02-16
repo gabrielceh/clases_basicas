@@ -1,3 +1,13 @@
+html{
+font-family: 'Montserrat', sans-serif;
+}
+
+.lado-izquierda{
+width: 300px;
+background-color: #909cac;
+color: #fff;
+}
+
 h2{
 font-style: italic;
 }
@@ -7,30 +17,30 @@ font-variant: small-caps;
 }
 
 .img-profile img{
-width: 150px;
+width: 300px;
 height: auto;
 }
 
 header{
-background-color: rgba(142, 210, 250);
+background-color: rgb(123, 172, 201);
 background-image:url("u.distrital.jpg");
 }
 
 .menu-navegacion {
-background-color:rgb(245, 222, 179);
 font-weight: bold;
-font-family: 'Roboto', sans-serif;
 font-style: italic;
 font-variant: small-caps;
 }
 
 .menu-navegacion ul li a{
 text-decoration: none;
+color: #fff;
 }
 
 .text-gray{
-color: #B3B6B7;
-font-weight: lighter;
+color: rgb(128, 128, 128);
+font-weight: bolder;
+font-style: italic;
 }
 
 h4{
@@ -39,20 +49,32 @@ text-decoration: underline;
 
 p{
 text-align: justify;
-}
-
-.text-gray{
-font-style: italic;
+font-size: 14px;
+line-height: 1.7;
 }
 
 .nombre-empresa{
 font-weight: bolder;
+color: #776794;
 }
 
 h5{
 font-weight: bold;
+font-size: 14px;
+line-height: 1.7;
 }
 
 section{
 background-color: azure;
+width: 800px;
+}
+
+.formacion{
+    font-weight: bolder;
+    color: #776794;
+}
+
+ul li{
+font-size: 14px;
+line-height: 1.7;
 }
