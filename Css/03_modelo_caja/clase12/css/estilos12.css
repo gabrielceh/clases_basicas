@@ -1,0 +1,43 @@
+.caja {
+  background: teal;
+  color: white;
+  /* ********MARGIN********* */
+  /* margin-top: 30px;
+  margin-right: 40px;
+  margin-bottom: 50px;
+  margin-left: 20px; */
+
+  margin: 30px auto;
+
+  /* margin: 30px 40px 50px 20px; */
+
+  /* ************BORDER********** */
+  /* border-color: red;
+  border-width: 5px;
+  border-style: solid; */
+
+  /* border-top: 5px solid black;
+  border-right: 5px solid blue; */
+
+  border: 5px solid red;
+
+  /* ***********PADDING********** */
+  /* padding-top: 10px;
+  padding-right: 10px;
+  padding-bottom: 10px;
+  padding-left: 10px; */
+
+  /* padding: 10px 10px; */
+  padding: 10px 9px 15px 12px;
+
+  /* **************ANCHO Y ALTO (solo para elementos en bloque)************** */
+  width: 300px;
+  height: 300px;
+}
+
+.caja-hija {
+  background-color: tomato;
+  width: 100px;
+  height: 100px;
+  margin: 20px auto;
+}

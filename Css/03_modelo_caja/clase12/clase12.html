@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/estilos12.css" />
+    <title>Modelo de caja</title>
+  </head>
+  <body>
+    <h1>Modelo de caja</h1>
+    <p>
+      Todos los elementos pueden ser considerados como cajas.Este modelo representa el diseño y
+      disposicion de la pagina. <br />
+      Esto consiste en:
+    </p>
+    <ul>
+      <li>margenes (margin)</li>
+      <li>bordes</li>
+      <li>relleno (padding)</li>
+      <li>contenido</li>
+    </ul>
+
+    <h3>Margin</h3>
+    <p>
+      Es el espacio fuera de la caja que nos sirve para separarla de otra caja. <br />
+      Si especificamos en el eje x la propiedad auto, el elemento se centra respecto al padre de
+      forma horizontal
+    </p>
+
+    <h3>border</h3>
+    <p>
+      Por defecto el estilo del border none. Agrega un borde al elemento. Este se definine por su
+      tamaño, su estilo de borde y su color. <br />
+      Podemos definir el border mediante: border-width, border-color y border-style. <br />
+      Para los estilos de los border tenemos:
+    </p>
+    <ul>
+      <li>none</li>
+      <li>solid</li>
+      <li>dotted (puntos)</li>
+      <li>dashed (lineas separadas)</li>
+      <li>double (dos lineas solidas)</li>
+      <li>groove (biselado)</li>
+      <li>ridge</li>
+      <li>inset</li>
+      <li>outset</li>
+      <li>hidden</li>
+    </ul>
+
+    <h3>Padding</h3>
+    <p>Es el espacion que hay entre el border del elemento y el contenido de este.</p>
+
+    <div class="caja">contenido de la caja</div>
+    <div class="caja">contenido de la caja</div>
+
+    <div class="caja">
+      <div class="caja-hija"></div>
+    </div>
+
+    <span class="caja">hola, soy un span</span>
+
+    <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+  </body>
+</html>
