@@ -1,0 +1,44 @@
+.lista-ul {
+  list-style-type: square;
+}
+
+.lista-ol {
+  list-style-type: lower-alpha;
+}
+
+.lista-img {
+  list-style-image: url('../../../assets/facebook-10.png');
+  /* list-style-position: outside; */
+}
+.lista-img li {
+  border: 1px solid black;
+  background-color: tomato;
+  margin-top: 10px;
+  padding: 3px;
+}
+.lista-list {
+  list-style: none;
+}
+
+/* .lista {
+  background-color: lightcoral;
+  list-style: none;
+  padding-left: 0;
+} */
+
+/* ***************************************** */
+.enlace:link {
+  color: red;
+}
+.enlace:active {
+  color: chartreuse;
+  font-size: 20px;
+}
+.enlace:visited {
+  color: teal;
+}
+.enlace:hover {
+  text-decoration: none;
+  font-weight: 700;
+  color: lightpink;
+}
