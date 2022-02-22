@@ -42,3 +42,25 @@
   font-weight: 700;
   color: lightpink;
 }
+
+/* **************************************** */
+table {
+  margin-top: 10px;
+  cursor: zoom-in;
+}
+.tabla-1 {
+  border-collapse: collapse;
+  border-spacing: 20px 10px; /* solo funciona con separate*/
+}
+.tabla-1 caption {
+  caption-side: bottom;
+}
+.tabla-2 {
+  border-collapse: separate;
+  empty-cells: hide;
+}
+
+.tabla-3 {
+  border-collapse: separate;
+  table-layout: fixed;
+}
