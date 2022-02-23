@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/estilos15.css" />
+    <title>clase 15</title>
+  </head>
+  <body>
+    <h1>display, visibility y position</h1>
+    <h2>Display</h2>
+    <p>
+      Cada elemento en una pag web es una caja. La propiedad display determina como se comporta esa
+      caja.
+    </p>
+    <h3>display: block</h3>
+    <p>Un elemento en bloque ocupa el ancho maximo posible, con saltos de linea antes y despues.</p>
+
+    <span class="d-block">Soy un span</span>
+    <span class="d-block">Soy un span</span>
+    <span class="d-block">Soy un span</span>
+    <span class="d-block">Soy un span</span>
+    <!-- EJEMPLOS -->
+    <h3>display: inline</h3>
+    <p>
+      Un elemento inline solo toma tanta anchura como sea necesario y no fuerza saltos de linea.
+    </p>
+    <p class="d-inline">Soy un parrafo</p>
+    <p class="d-inline">Soy un parrafo</p>
+    <p class="d-inline">Soy un parrafo</p>
+    <!-- Ejemplos -->
+    <h3>display:none</h3>
+    <p>
+      Oculta el elemento, haciendo que este no ocupe espacio. La pag se ejecutará como si el
+      elemento no existiera
+    </p>
+
+    <p class="d-none">soy un parrafo con display none</p>
+    <!-- Ejemplos -->
+
+    <hr />
+
+    <h2>visibility</h2>
+    <p>
+      Especifica si un elemento es visile o está oculto. Se diferencia de display:none, en que este,
+      el elemento no ocupara espacio, en cambio, con visibility si ocupara espacio en la pag.
+    </p>
+    <p>Sus valores mas comunes son: visible y hidden</p>
+    <!-- Ejemplos -->
+    <p class="visi">Soy un parrafo con visibility hidden</p>
+    <hr />
+
+    <h2>position</h2>
+    <p>Te permite posicionar un elemento.</p>
+    <p>
+      Para posicionar los elemenos usamos las propiedades: top(arriba), bottom(abajo), left(izq.),
+      right(derecha)
+    </p>
+
+    <h3>position:static</h3>
+    <p>
+      Por defecto, los elementos son posicionados de forma estatica. Cuando se posicionan asi,
+      siempre se pocisiona de acuerdo al flujo del documento
+    </p>
+    <p>parrafo de ejemplo</p>
+    <p>parrafo de ejemplo</p>
+    <p>parrafo de ejemplo</p>
+    <p class="static">parrafo de ejemplo</p>
+
+    <h3>position:fixed</h3>
+    <p>
+      El elemento se posicionara fijo y relativo a la ventana del navegador. No se moverá aunque se
+      desplace
+    </p>
+    <p>parrafo de ejemplo</p>
+    <p class="fixed">parrafo de ejemplo fixed</p>
+    <p>parrafo de ejemplo</p>
+    <p>parrafo de ejemplo</p>
+
+    <h3>position: sticky</h3>
+    <p>
+      funciona de forma similar a fixed, pero se queda fijo dependiendo la distancia que haya sido
+      fijada en top
+    </p>
+
+    <p>parrafo ejemplo</p>
+    <p class="sticky">parrafo ejemplo</p>
+    <p>parrafo ejemplo</p>
+    <p>parrafo ejemplo</p>
+
+    <h3>position:relative</h3>
+    <p>El elemento es posicionado relativo a su posicion normal</p>
+
+    <p>Parrafo de ejemplo</p>
+    <p class="relative">Parrafo de ejemplo</p>
+    <p>Parrafo de ejemplo</p>
+    <p>Parrafo de ejemplo</p>
+
+    <h3>position:absolute</h3>
+    <p>
+      Es posicionado relativo al primer elemento padre con posicion relative. Si el elemento padre
+      no tiene position relative, se posiciona respecto al html
+    </p>
+    <div class="padre">
+      <div class="hijo absolute">hijo 1</div>
+      <div class="hijo">hijo 2</div>
+      <div class="hijo">hijo 3</div>
+    </div>
+
+    <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+  </body>
+</html>

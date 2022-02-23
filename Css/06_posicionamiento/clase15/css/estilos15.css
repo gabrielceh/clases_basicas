@@ -1,0 +1,61 @@
+.d-block {
+  display: block;
+}
+
+.d-inline {
+  display: inline;
+}
+
+.d-none {
+  display: none;
+}
+/* ************************************ */
+.visi {
+  visibility: visible;
+}
+.visi:hover {
+  visibility: hidden;
+}
+
+/* ************************************ */
+.static {
+  color: tomato;
+  position: static;
+}
+
+.fixed {
+  color: turquoise;
+  position: fixed;
+  top: 50%;
+  right: 10%;
+}
+
+.relative {
+  color: teal;
+  position: relative;
+  top: 40px;
+  left: 30%;
+}
+
+.padre {
+  position: relative;
+  background-color: blueviolet;
+  width: 400px;
+  height: 400px;
+}
+.hijo {
+  background-color: yellow;
+  width: 100px;
+  height: 100px;
+  border: 1px solid black;
+}
+.absolute {
+  position: absolute;
+  right: 10%;
+}
+
+.sticky {
+  position: sticky;
+  color: green;
+  top: 50px;
+}
