@@ -10,6 +10,7 @@ body {
   padding: 1rem 0;
   position: fixed;
   top: 0;
+  z-index: 200;
 }
 .header-container {
   width: 90%;
@@ -70,5 +71,41 @@ body {
 
 .modal-show {
   opacity: 1;
+  visibility: visible;
+}
+
+/*//////*/
+.menu {
+  position: fixed;
+  z-index: 100;
+  background-color: rgb(255, 196, 196);
+  width: 30%;
+  height: 50vh;
+  top: 54px;
+  left: -2000px;
+  transition: left .3s ease;
+  visibility: hidden;
+}
+
+.menu-container {
+  position: absolute;
+  width: 300px;
+  height: 500px;
+  margin: 0 auto;
+  top: 10%;
+}
+
+.menu-btn-close {
+  border: 1px solid #ccc;
+  padding: 0.3rem;
+  background-color: rgb(247, 247, 247);
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  border-radius: 50%;
+}
+
+.menu-show{
+  left: 0;
   visibility: visible;
 }
