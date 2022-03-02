@@ -1,0 +1,68 @@
+.border-r {
+  margin: 10px auto;
+  width: 300px;
+  height: 300px;
+  background-color: violet;
+  border-radius: 30px;
+}
+.border-r2 {
+  margin: 10px auto;
+  width: 300px;
+  height: 300px;
+  background-color: burlywood;
+  border-radius: 5px 0 30px 20px;
+}
+.circulo {
+  margin: 10px auto;
+  width: 300px;
+  height: 300px;
+  background-color: rebeccapurple;
+  border-radius: 50%;
+}
+.circulo-img {
+  border-radius: 100%;
+}
+
+/* ******************* */
+.box-sh {
+  margin: 30px;
+  width: 300px;
+  height: 100px;
+  background-color: tomato;
+  box-shadow: 20px 20px rgb(255, 174, 174);
+}
+.box-sh2 {
+  margin: 30px;
+  width: 300px;
+  height: 100px;
+  background-color: rgb(119, 182, 16);
+  box-shadow: 20px 20px 10px 5px rgb(204, 204, 204);
+}
+.tarjeta {
+  margin: 50px auto;
+  width: 300px;
+  height: 150px;
+  padding: 10px;
+  border-radius: 15px;
+  box-shadow: 5px 5px 10px #ccc, -5px -5px 10px #ccc;
+}
+
+/* ********************* */
+.transp-container {
+  position: relative;
+  width: 100%;
+}
+
+.transp {
+  background-color: palevioletred;
+  width: 200px;
+  height: 200px;
+  margin: 0px auto;
+}
+.tr {
+  background-color: rgba(218, 90, 90, 0.775);
+  position: absolute;
+  margin: 0 auto;
+  top: 10%;
+  left: 35%;
+}
