@@ -11,10 +11,10 @@ body {
 }
 
 .lado-izquierdo {
-  width: 300px;
+  width: 250px;
   background-color: rgb(243, 232, 232);
   margin: 0px;
-  padding: 0px;
+  padding: 10px 20px;
   color: hsl(261, 18%, 49%);
 }
 
@@ -31,6 +31,10 @@ h3 {
   color: hsl(261, 18%, 49%);
   position: relative;
  }
+
+header{
+  
+}
 
 header div {
   background-image: url('../../../../assets/u.distrital.jpg');
@@ -60,26 +64,36 @@ header div .img-profile {
   font-weight: bold;
   font-style: italic;
   font-variant: small-caps;
-  /*border: 10px solid rgb(0, 250, 0);
-padding-top: 40px 40px 10px 5px;
+  border: 1px solid rgb(250, 0, 33);
+/*padding-top: 40px 40px 10px 5px;
 */
-  margin: 2px;
+  
+  padding: 5px;
   text-align: center;
+  background-color: antiquewhite;
+  
+  z-index: 1000;
+  position: sticky;
+  top:0;
 }
 
-.menu-table{
+/*.menu-table{
   margin-left: 0px;
   background-color: rgb(243, 232, 232);
   border-collapse: separate;
   border-spacing: 5px 5px;
   /*empty-cells: hide;
-  border-collapse: collapse;*/
+  border-collapse: collapse;
 }
+*/
 
-.menu-navegacion tr td a {
+.menu-navegacion a {
   text-decoration: none;
   color: rgb(128, 128, 128);
+  padding: 15px 0;
+  margin: 10px;
 }
+
 
 .text-gray {
   color: rgb(128, 128, 128);
@@ -92,9 +106,8 @@ h4 {
   margin: 10px;
 }
 
-p {
-  font-size: 14px;
-  line-height: 1.7;
+aside article p {
+  text-align:start ;
 }
 
 article p {
