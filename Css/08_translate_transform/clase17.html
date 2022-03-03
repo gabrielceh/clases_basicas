@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/estilos17.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Transition y transform: rotate(), translate()</h1>
+
+    <h2>transition</h2>
+    <p>Nos permiten cambiar de un valor de propiedad a otro sobre una duracion dada.</p>
+    <p>Los valores de esta propiedad son:</p>
+    <ol>
+      <li>transition-property: Es la propiedad a modificar</li>
+      <li>transition-timing-function: especifica como empieza y termina la transicion</li>
+      <li>transition-delay: tiempo de retraso de la transicion</li>
+    </ol>
+
+    <div class="caja-transition-1"></div>
+
+    <h3>transition-timing-function</h3>
+    <ul>
+      <li>ease: la animacion comienza lento y luego acelera</li>
+      <li>ease-in: la animacion comienza lento y luego acelera y se detiene abruptamente</li>
+      <li>ease-out: la animacion comienza rapido y luego desacelera hasta detenerse</li>
+      <li>ease-in-out: simialar a ease pero mas suave</li>
+      <li>linear: constante</li>
+      <li>cubic-bezier()</li>
+    </ul>
+
+    <div class="caja caja-transition-e">ease</div>
+    <div class="caja caja-transition-e-i">ease-in</div>
+    <div class="caja caja-transition-e-o">ease-out</div>
+    <div class="caja caja-transition-e-i-o">ease-in-out</div>
+    <div class="caja caja-transition-l">linear</div>
+
+    <hr />
+
+    <h2>Transform</h2>
+    <p>
+      Pemiten tranladar, rotar, escalar, sesgar elementos. Es un efecto que sirve para cambiar de
+      forma, tamaña, ubicacion al elemento
+    </p>
+
+    <h3>transform: rotate()</h3>
+    <p>
+      Rota el elemento en grados(deg). Los elementos rotan en sentido horario y si usas numeros
+      negativos, rota de forma inversa
+    </p>
+
+    <div class="caja-rot">caja rotate</div>
+
+    <h3>transform: translate()</h3>
+    <p>
+      Mueve un elemento de su posicion actual de acuerdo a parametros dados segun los ejes (X - Y)
+    </p>
+
+    <div class="caja-translate">
+      <p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vitae eos beatae magni incidunt
+        necessitatibus, facere aspernatur distinctio rem consectetur asperiores quae illo optio
+        voluptates ducimus. Sed ea ipsam ratione laborum!
+      </p>
+    </div>
+    <div class="caja-translate">
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor, molestias voluptatum
+        repudiandae provident quas delectus quod perferendis ab repellat reiciendis, aliquid
+        possimus maiores, corporis eligendi explicabo quidem enim consequuntur. Deserunt.
+      </p>
+    </div>
+
+    <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+  </body>
+</html>
