@@ -13,14 +13,22 @@ body {
 .lado-izquierdo {
   width: 250px;
   background-color: rgb(243, 232, 232);
-  margin: 0px;
-  padding: 10px 20px;
+  margin-top: 0;
+  margin-left: 0;
+  margin-right: 0;
+  padding-right: 5px;
+  padding-left: 15px;
+  padding-top: 25px;
+  
   color: hsl(261, 18%, 49%);
+  position: absolute;
+  text-align: justify;
 }
 
 h2 {
   font-style: italic;
   margin-top: 0mm;
+  padding-top: 20px;
   color: hsl(261, 18%, 49%);
   position: relative;
 }
@@ -58,23 +66,26 @@ header div .img-profile {
   width: 150px;
   height: auto;
   position: relative;
+  border-radius: 40%;
+  right: 30%;
+  bottom: 100px;
 }
 
 .menu-navegacion {
   font-weight: bold;
   font-style: italic;
   font-variant: small-caps;
-  border: 1px solid rgb(250, 0, 33);
-/*padding-top: 40px 40px 10px 5px;
-*/
-  
+ /* border: 1px solid rgb(250, 0, 33);
+ padding-top: 40px 40px 10px 5px;*/
+
   padding: 5px;
   text-align: center;
-  background-color: antiquewhite;
-  
+  background-color: rgb(235, 228, 228);
   z-index: 1000;
   position: sticky;
   top:0;
+  border-radius: 5px;
+  box-shadow: 5px 5px 10px #ccc, -5px -5px 10px #ccc;
 }
 
 /*.menu-table{
@@ -128,7 +139,7 @@ article p {
 
 section {
   background-color: azure;
-  margin-left: 300px;
+  margin-left: 20px;
   padding: 20px;
 }
 
@@ -155,7 +166,11 @@ h5 {
   margin-bottom: 2px;
 }
 
-/*.datos-contacto {
-  list-style-image: url('../../../../assets/contacts_1.svg');
+.lado-derecho{
+ margin-left: 270px;
+ padding-left: 5px;
+
 }
-*/
+.img-contacto{
+  width: 20px;
+}
