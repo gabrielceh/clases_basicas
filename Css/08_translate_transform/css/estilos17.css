@@ -81,3 +81,65 @@
 .caja-translate:hover {
   transform: translate(0px, -20px);
 }
+
+/* ***************************** */
+.caja-origin {
+  position: relative;
+  width: 200px;
+  height: 100px;
+  background-color: royalblue;
+  margin: 20px auto;
+  transform: rotate(0deg);
+  transform-origin: 100% 100%;
+  transition: transform ease-in-out 1s;
+}
+.caja-origin:hover {
+  transform: rotate(360deg);
+}
+.punto {
+  position: absolute;
+  width: 3px;
+  height: 3px;
+  background-color: red;
+  left: 100%;
+  top: 100%;
+}
+
+/* ******************************** */
+.caja-scale {
+  width: 200px;
+  height: 100px;
+  background-color: royalblue;
+  margin: 20px auto;
+  transform: scale(1);
+  transition: transform ease-in-out 1s;
+}
+.caja-scale:hover {
+  transform: scale(1.5);
+}
+
+/* ****************************** */
+.caja-skew {
+  width: 200px;
+  height: 100px;
+  background-color: royalblue;
+  margin: 20px auto;
+  transform: skewX(0deg) skewY(0deg);
+  transition: transform ease-in-out 1s;
+}
+.caja-skew:hover {
+  transform: skewX(20deg) skewY(-10deg);
+}
+
+/* **************************** */
+.caja-multiple {
+  width: 200px;
+  height: 100px;
+  background-color: royalblue;
+  margin: 20px auto;
+  transform: scale(1) translate(0px, 0px) rotate(0deg);
+  transition: transform ease-in-out 1s;
+}
+.caja-multiple:hover {
+  transform: scale(1.5) translate(50px, 0px) rotate(90deg);
+}
