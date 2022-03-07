@@ -66,9 +66,18 @@ header div .img-profile {
   width: 150px;
   height: auto;
   position: relative;
-  border-radius: 40%;
+  border-radius: 20%;
   right: 30%;
   bottom: 100px;
+  transition: border-radius linear 1s;
+  transition: transform ease-in-out 1s;
+  transform: scale(auto);
+}
+
+header div .img-profile:hover {
+  border-radius: 50%;
+  transform: scale(2);
+  
 }
 
 .menu-navegacion {
@@ -86,6 +95,12 @@ header div .img-profile {
   top:0;
   border-radius: 5px;
   box-shadow: 5px 5px 10px #ccc, -5px -5px 10px #ccc;
+  transition: transform ease-in-out 1s;
+  transform: scale(1);
+}
+
+.menu-navegacion:hover {
+  transform: scale(1.2);
 }
 
 /*.menu-table{
@@ -173,4 +188,15 @@ h5 {
 }
 .img-contacto{
   width: 20px;
+  display: block;
 }
+
+#datos-contacto{
+  transform: translate(0px, 0px);
+  transition: transform ease-in-out 0.3s;
+}
+
+#datos-contacto:hover {
+  transform: translate(100px, -20px);
+}
+
