@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/estilos18.css" />
+    <title>clase 18</title>
+  </head>
+  <body>
+    <h1>Animation</h1>
+    <p>
+      Permite a un elemento cambiar de un estilo a otro. Puedes cambiar de propiedades Css como
+      quieras las veces que quieras.
+    </p>
+    <p>Para especifiar una animacion, usamos la sgte sintaxis:</p>
+    <pre>
+      elemento{
+        animation-name: nombreAnimacion;
+        animation-duration: tiempo en segundo;
+      }
+
+      @keyframes nombreAnimacion {
+        from{
+          propiedad: valor;
+          ...
+        }
+        to{
+          propiedad: valor;
+          ...
+        }
+      }
+    </pre>
+
+    <h2>animation-iteration-count - animation-direction</h2>
+
+    <p>Si queremos que la animacion se repita, usamos animation-iteration-count.</p>
+    <p>
+      animation-direction especifica como debe repetirse la animacion. Si le indicamos normal, cada
+      que finaliza la animacion, inicia desde el principio. Si le indicamos "alternate", cuando
+      finzaliza comienza desde el final hasta el inicio
+    </p>
+
+    <h2>animation-timing-function - animation-delay</h2>
+    <p>animation-timing-function, es similar a las transiciones</p>
+    <ul>
+      <li>ease: la animacion comienza lento y luego acelera</li>
+      <li>ease-in: la animacion comienza lento y luego acelera y se detiene abruptamente</li>
+      <li>ease-out: la animacion comienza rapido y luego desacelera hasta detenerse</li>
+      <li>ease-in-out: simialar a ease pero mas suave</li>
+      <li>linear: constante</li>
+    </ul>
+    <p>animation-delay retrasa el inicion de la animacion</p>
+
+    <h2>animation-play-state</h2>
+    <p>
+      nos permite cambiat el estado de la animacion, sus valores posibles son "paused" y "running",
+      esta ultima es por defecto
+    </p>
+
+    <div class="caja"></div>
+
+    <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+  </body>
+</html>
