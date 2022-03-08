@@ -1,0 +1,146 @@
+.caja-transition-1 {
+  width: 200px;
+  height: 200px;
+  background-color: tomato;
+  margin: 20px auto;
+  transition: background-color ease 0.5s;
+}
+
+.caja-transition-1:hover {
+  background-color: yellowgreen;
+}
+
+.caja {
+  width: 200px;
+  height: 200px;
+  background-color: blueviolet;
+  margin: 10px;
+  display: inline-block;
+  border-radius: 5px;
+}
+
+.caja-transition-e {
+  transition: border-radius ease 1s;
+}
+.caja-transition-e:hover {
+  border-radius: 20px;
+}
+.caja-transition-e-i {
+  transition: border-radius ease-in 1s;
+}
+.caja-transition-e-i:hover {
+  border-radius: 20px;
+}
+.caja-transition-e-o {
+  transition: border-radius ease-out 1s;
+}
+.caja-transition-e-o:hover {
+  border-radius: 20px;
+}
+.caja-transition-e-i-o {
+  transition: border-radius ease-in-out 1s;
+}
+.caja-transition-e-i-o:hover {
+  border-radius: 20px;
+}
+.caja-transition-l {
+  transition: border-radius linear 1s, background-color ease 2s;
+}
+.caja-transition-l:hover {
+  border-radius: 50%;
+  background-color: pink;
+}
+
+/* ****************************** */
+
+.caja-rot {
+  width: 200px;
+  height: 100px;
+  background-color: royalblue;
+  margin: 20px auto;
+  transform: rotate(0deg);
+  transition: transform ease-in-out 1s;
+}
+
+.caja-rot:hover {
+  transform: rotate(360deg);
+}
+
+.caja-translate {
+  width: 300px;
+  height: auto;
+  border-radius: 5px;
+  padding: 16px;
+  margin: 50px 20px;
+  box-shadow: 0px 0px 10px #bbb;
+  display: inline-block;
+  background-color: aquamarine;
+  transform: translate(0px, 0px);
+  transition: transform ease-in-out 0.3s;
+}
+
+.caja-translate:hover {
+  transform: translate(100px, -200px);
+}
+
+/* ***************************** */
+.caja-origin {
+  position: relative;
+  width: 200px;
+  height: 100px;
+  background-color: royalblue;
+  margin: 20px auto;
+  transform: rotate(0deg);
+  transform-origin: 100% 100%;
+  transition: transform ease-in-out 1s;
+}
+.caja-origin:hover {
+  transform: rotate(360deg);
+}
+.punto {
+  position: absolute;
+  width: 3px;
+  height: 3px;
+  background-color: red;
+  left: 100%;
+  top: 100%;
+}
+
+/* ******************************** */
+.caja-scale {
+  width: 200px;
+  height: 100px;
+  background-color: royalblue;
+  margin: 20px auto;
+  transform: scale(1);
+  transition: transform ease-in-out 1s;
+}
+.caja-scale:hover {
+  transform: scale(1.5);
+}
+
+/* ****************************** */
+.caja-skew {
+  width: 200px;
+  height: 100px;
+  background-color: royalblue;
+  margin: 20px auto;
+  transform: skewX(0deg) skewY(0deg);
+  transition: transform ease-in-out 1s;
+}
+.caja-skew:hover {
+  transform: skewX(200deg);
+}
+
+/* **************************** */
+.caja-multiple {
+  width: 200px;
+  height: 100px;
+  background-color: red;
+  margin: 20px auto;
+  transform: scale(1) translate(0px, 0px) rotate(0deg) skewX(0deg) skewY(0deg);
+  transition: transform ease-in-out 1s;
+}
+.caja-multiple:hover {
+  transform: scale(2) translate(50px, 0px) rotate(90deg) skewX(100deg) skewY(-100deg);
+}

@@ -40,20 +40,20 @@
 .padre {
   position: relative;
   background-color: rgb(61, 43, 226);
-  width: 500px;
-  height: 500px;
+  width: 1000px;
+  height: 1000px;
 }
 
 .hijo {
   background-color: yellow;
-  width: 100px;
-  height: 100px;
+  width: 10%;
+  height: 10%;
   border: 1px solid black;
 }
 .absolute {
   position: sticky;
-  right: 30%;
-  top: 80%;
+  left: 33%;
+  top: 50%;
   z-index: 2;
 }
 
