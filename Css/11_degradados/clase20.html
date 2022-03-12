@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/estilos20.css" />
+    <title>clase 20</title>
+  </head>
+  <body>
+    <h1>Degradados</h1>
+    <h2>Degradados lineales</h2>
+    <p>
+      Debemos definir al menos 2 paradas de colores. Las paradas son los colores con los que quieres
+      crear el degradado.
+    </p>
+    <p>Para trabajar con degradados lineales usamos linear-gradient(color1, color2)</p>
+    <p>
+      Las paradas de cada color se pueden especificar. Se pueden usar %, px, rem, etc.
+      linear-gradient(color1 20%, color2 80%).
+    </p>
+    <p>
+      La direccion del degradado puede ser modificado. Puedes usar left, bottom, right, top o sus
+      combinaciones, ejemplo left top. linear-gradient(left, color1, color2)
+    </p>
+    <p>
+      Podemos indicar la direccion tambien especificando un angulo. Un angulo de 0° va de izquierda
+      a derecha. Un angulo de 90° va de abajo hacia arriba. linear-gradient(100deg, color1, color2)
+    </p>
+
+    <div class="deg-lineal"></div>
+
+    <hr />
+
+    <h2>Degradados radiales</h2>
+    <p>
+      Debemos definir al menos 2 paradas de colores. Las paradas son los colores con los que quieres
+      crear el degradado.
+    </p>
+    <p>
+      Para trabajar con degradados lineales usamos radial-gradient(position, forma o tomaño,
+      colore1, color2)
+    </p>
+
+    <ul>
+      <li>
+        posicion: Define la posicion del degradado mediante % o las palabras para posicionar(top,
+        left, bottom, right)
+      </li>
+      <li>
+        forma o tamaño: define la forma y el tamaño del degradado. Para darle forma tenemos 2
+        argumentos: ellipse(por defecto), circle
+      </li>
+    </ul>
+
+    <div class="deg-radial"></div>
+
+    <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+    <p></p>
+  </body>
+</html>

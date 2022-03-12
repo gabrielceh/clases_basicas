@@ -1,0 +1,17 @@
+.deg-lineal {
+  width: 200px;
+  height: 200px;
+  /* background-color: red; */
+  /* background: -moz-linear-gradient(tomato, violet); */
+  /* background: -webkit-linear-gradient(tomato, violet); */
+  /* background: -webkit-linear-gradient(tomato 30%, violet 70%); */
+  /* background: -webkit-linear-gradient(left, tomato 30%, violet 70%); */
+  /* background: -webkit-linear-gradient(left bottom, tomato 30%, violet 70%); */
+  background: -webkit-linear-gradient(90deg, tomato 30%, violet 50%, purple 80%);
+}
+
+.deg-radial {
+  width: 200px;
+  height: 300px;
+  background: -webkit-radial-gradient(90% 0%, circle, tomato 30%, violet 50%, purple 80%);
+}
