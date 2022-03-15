@@ -1,0 +1,69 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.contenedor1 {
+  display: flex;
+  border: 1px solid #555;
+}
+
+.contenedor1 div {
+  background-color: #ccc;
+  padding: 1rem;
+  border: 1px solid #eee;
+}
+
+/* ************************************* */
+
+.contenedor2 {
+  padding: 0.5rem;
+  border: 2px solid green;
+  display: flex;
+  flex-direction: column;
+}
+.contenedor2 div {
+  width: 50px;
+  height: 50px;
+  border: 2px solid lightcoral;
+}
+
+@media screen and (min-width: 760px) {
+  .contenedor2 {
+    flex-direction: row;
+    background-color: red;
+  }
+}
+
+.contenedor3 {
+  border: 2px solid rgb(0, 128, 122);
+  height: 350px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+.contenedor3 div {
+  width: 50px;
+  height: 50px;
+  border: 2px solid rgb(240, 191, 128);
+}
+
+/* **************************************** */
+header {
+  width: 100%;
+  background-color: tomato;
+}
+.contenedor-header {
+  /* background-color: yellow; */
+  width: 95%;
+  margin: 0 auto;
+  padding: 0.5rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.contenedor-nombre h3 {
+  margin: 0;
+  color: white;
+}

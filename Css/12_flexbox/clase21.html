@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/estilos21.css" />
+    <title>clase 21 flexbox</title>
+  </head>
+  <body>
+    <header>
+      <div class="contenedor-header">
+        <div class="contenedor-nombre">
+          <h3>nombre de la pagina</h3>
+        </div>
+
+        <nav class="menu">
+          <a href="#">inicio</a>
+          <a href="#">productos</a>
+          <a href="#">contacto</a>
+        </nav>
+      </div>
+    </header>
+
+    <h1>Flexbox</h1>
+    <p>
+      Flexbox nos permite implementar interfaces de usuario y maquetación de páginas web en forma
+      más sencilla de como las veníamos haciendo del 2000 al 2014.
+      <br />
+      Flexbox nos facilita la maquetación del sitio web y todos sus componentes. También facilita la
+      adaptación de la página a distintos tamaños de pantalla
+    </p>
+
+    <p>
+      Un Flexbox o caja flexible consiste en un elemento contenedor y en su interior una serie de
+      items <br />
+      Para definir un elemento como contenedor de cajas flexibles debemos definir la propiedad
+      display con el valor "flex", con esto ya tenemos un caja flexible.
+    </p>
+
+    <div class="contenedor1">
+      <div>
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+        ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+        laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+        voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+        cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+      </div>
+      <div>
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+        ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+        laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+        voluptate velit esse cillum dolore eu fugiat nulla pariatur."
+      </div>
+      <div>
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+        ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+        laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+        voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+        cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+      </div>
+    </div>
+
+    <hr />
+    <h2>Flexbox - (flex-direction aplicada al contenedor)</h2>
+
+    <p>
+      La primera propiedad que podemos configurar cuando implementamos una caja flexible se llama
+      flex-direction. Por defecto esta propiedad se inicializa con el valor "row".
+      <br />
+      Los valores que podemos asignarle a la propiedad "flex-direction" son:
+    </p>
+    <ul>
+      <li>row (valor por defecto)</li>
+      <li>column</li>
+      <li>row-reverse</li>
+      <li>column-reverse</li>
+    </ul>
+
+    <div class="contenedor2">
+      <div>hijo 1</div>
+      <div>hijo 2</div>
+      <div>hijo 3</div>
+      <div>hijo 4</div>
+      <div>hijo 5</div>
+    </div>
+
+    <hr />
+
+    <h2>Justify-content</h2>
+    <p>
+      La propiedad justify-content controla como se distribuyen los items a lo largo del contenedor.
+      <br />
+      Por defecto la propiedad justify-content almacena el valor "flex-start".
+      <br />
+      Los valores que podemos asignarle a la propiedad "justify-content" son:
+    </p>
+
+    <ul>
+      <li>flex-start: los item aparecen pegados al inicio del contenedor.</li>
+
+      <li>flex-end: aparecen pegados al final.</li>
+
+      <li>center: se agrupan todos en el centro.</li>
+
+      <li>
+        space-between: se distribuyen los items ocupando todo el espacio disponible, con espacios
+        iguales entre ellos, pero sin dejar espacio al inicio y al final.
+      </li>
+
+      <li>
+        space-around: se distribuyen los items ocupando todo el espacio disponible, con espacios
+        iguales entre ellos, pero dejando espacio al inicio y al final.
+      </li>
+
+      <li>
+        space-evenly: se distribuyen los items ocupando todo el espacio disponible, con espacios
+        iguales entre ellos
+      </li>
+    </ul>
+
+    <p>
+      Cuando la propiedad flex-direction almacena el valor "row" el eje principal es el horizontal y
+      el eje transversal es el vertical:
+    </p>
+    <p>
+      Cuando modificamos la propiedad "justify-content" los item se distribuyen con respecto al eje
+      principal del contenedor.
+    </p>
+    <img src="../../assets/ejes-flexbox.png" alt="" width="800px" />
+
+    <div class="contenedor3">
+      <div>hijo 1</div>
+      <div>hijo 2</div>
+      <div>hijo 3</div>
+      <div>hijo 4</div>
+      <div>hijo 5</div>
+    </div>
+
+    <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+  </body>
+</html>
