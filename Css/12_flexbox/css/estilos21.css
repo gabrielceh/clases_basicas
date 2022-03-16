@@ -40,8 +40,8 @@ body {
   border: 2px solid rgb(0, 128, 122);
   height: 350px;
   display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
+  flex-direction: column;
+  justify-content: flex-end;
 }
 .contenedor3 div {
   width: 50px;

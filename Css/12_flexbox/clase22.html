@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/estilos22.css" />
+    <title>clase 22</title>
+  </head>
+  <body>
+    <h1>align-items - flex-wrap - align-content</h1>
+    <h2>align-items</h2>
+    <p>
+      Es similar a la propiedad "justify-content", pero la alineación es con respecto al eje
+      transversal.
+      <br />
+      Los valores que podemos asignarle a la propiedad "align-items" son:
+    </p>
+    <ul>
+      <li>
+        stretch: Los items ocupan toda la altura o anchura dependiendo del valor de la propiedad
+        "flex-direction".
+      </li>
+      <li>
+        flex-start: Los items se ubican en la parte superior o izquierda del contenedor dependiendo
+        del valor de la propiedad "flex-direction".
+      </li>
+      <li>
+        flex-end: Los items se ubican en la parte inferior o derecha del contenedor dependiendo del
+        valor de la propiedad "flex-direction".
+      </li>
+      <li>center: Los item aparecen centrados con respecto al eje transversal.</li>
+      <li>
+        baseline: Los item se alinean respecto al eje transversal del contenedor teniendo en cuenta
+        las líneas base de cada item, esta se define en base a los texto de los ítems.
+      </li>
+    </ul>
+
+    <div class="contenedor1">
+      <div class="item">hijo 1</div>
+      <div>hijo 2</div>
+      <div>hijo 3</div>
+      <div>hijo 4</div>
+      <div>hijo 5</div>
+    </div>
+
+    <hr />
+
+    <h2>flex-wrap</h2>
+    <p>La propiedad "flex-wrap" puede almacenar alguno de estos tres valores:</p>
+    <ul>
+      <li>nowrap (una sola linea)</li>
+      <li>wrap (varias lineas)</li>
+      <li>wrap-reverse</li>
+    </ul>
+
+    <p>
+      El valor por defecto que almacena la propiedad "flex-wrap" es "nowrap". Esto hace que todos
+      los items se ubiquen siempre en el eje principal y en una misma línea independientemente a la
+      cantidad de items que dispongamos.
+    </p>
+
+    <div class="contenedor2">
+      <div>hijo 1</div>
+      <div>hijo 2</div>
+      <div>hijo 3</div>
+      <div>hijo 4</div>
+      <div>hijo 5</div>
+    </div>
+
+    <hr />
+
+    <h2>align-content</h2>
+    <p>
+      La propiedad "align-content" solo es aplicable cuando disponemos un Flexbox con varias líneas
+      (es decir que hemos cargado el valor "wrap" en la propiedad "flex-wrap")
+      <br />
+      Los valores posibles de la propiedad "align-content" son:
+    </p>
+
+    <ul>
+      <li>stretch</li>
+      <li>flex-start</li>
+      <li>flex-end</li>
+      <li>center</li>
+      <li>space-between</li>
+      <li>space-around</li>
+    </ul>
+
+    <div class="contenedor3">
+      <div>hijo 1</div>
+      <div>hijo 2</div>
+      <div>hijo 3</div>
+      <div>hijo 4</div>
+      <div>hijo 5</div>
+    </div>
+
+    <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+  </body>
+</html>
