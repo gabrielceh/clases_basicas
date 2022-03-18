@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/estilos23.css" />
+    <title>clase 23</title>
+  </head>
+  <body>
+    <h1>Propiedades de los hijos del flexbox: flex-grow - flex-shrink - flex-basis</h1>
+    <h2>flex-grow</h2>
+    <p>
+      Esta propiedad almacena un valor entero positivo y controla que tanto crecerá el item
+      rellenando el espacio no utilizado por los otros items.
+      <br />
+      El valor por defecto de la propiedad flex-grow es cero (no tiene una unidad de medida ya que
+      indica un factor de crecimiento)
+    </p>
+
+    <div class="contenedor1">
+      <div class="item1">Caja 1</div>
+      <div class="item2">Caja 2</div>
+      <div class="item3">Caja 3</div>
+    </div>
+
+    <hr />
+
+    <h2>flex-shrink</h2>
+    <p>
+      Almacena un valor entero no negativo. Este valor representa un factor de encogimiento o
+      contracción del item.
+      <br />
+      Cuando no hay más espacio para repartir en el Flexbox los items comienzan a contraerse para
+      entrar en el contenedor.
+      <br />
+      El valor por defecto almacenando en la propiedad "flex-shrink" es el 1, esto quiere decir que
+      cuando empezamos a reducir el ancho del contenedor los items se encogen en forma proporcional.
+      <br />
+      Si queremos que uno o más items no se encojan debemos asignarle a la propiedad "flex-shrink"
+      el valor cero.
+    </p>
+
+    <div class="contenedor2">
+      <div class="item4">Caja 1<br />Esto es una prueba de la propiedad flex-shrink</div>
+      <div class="item5">Caja 2<br />Esto es una prueba de la propiedad flex-shrink</div>
+      <div class="item6">Caja 3<br />Esto es una prueba de la propiedad flex-shrink</div>
+    </div>
+
+    <hr />
+    <h2>flex-basis</h2>
+    <p>
+      La propiedad flex-basis define el ancho con respecto al eje principal (si el contenedor es
+      horizontal luego flex-basic representa el width, en cambio si el contenedor está en forma
+      vertical la propiedad flex-basis representa el height)
+      <br />
+      El tamaño base que definimos en la propiedad flex-basis puede no llegar a cumplirse
+      dependiendo de las otras propiedades vistas que se aplican a los items.
+      <br />
+      Esta propiedad es fundamental para definir los tamaños de los items. Podemos emplear las
+      diferentes unidades de medida que conocemos píxeles, rem, em, % etc.
+      <br />
+      El valor por defecto que almacena la propiedad "flex-basis" es "auto", es decir que se calcula
+      su medida en forma automática.
+    </p>
+
+    <div class="contenedor3">
+      <div class="item7">Caja 1</div>
+      <div class="item8">Caja 2</div>
+      <div class="item9">Caja 3</div>
+    </div>
+
+    <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+  </body>
+</html>

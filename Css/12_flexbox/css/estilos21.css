@@ -29,13 +29,6 @@ body {
   border: 2px solid lightcoral;
 }
 
-@media screen and (min-width: 760px) {
-  .contenedor2 {
-    flex-direction: row;
-    background-color: red;
-  }
-}
-
 .contenedor3 {
   border: 2px solid rgb(0, 128, 122);
   height: 350px;
@@ -66,4 +59,38 @@ header {
 .contenedor-nombre h3 {
   margin: 0;
   color: white;
+}
+
+.menu {
+  display: none;
+}
+.menu-hamburguesa {
+  display: block;
+}
+
+@media screen and (min-width: 760px) {
+  .contenedor2 {
+    flex-direction: row;
+    background-color: red;
+  }
+
+  .menu {
+    display: block;
+  }
+  .menu-hamburguesa {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 300px) {
+  .contenedor-header {
+    flex-wrap: wrap;
+    background-color: purple;
+  }
+}
+
+@media print {
+  .contenedor1 {
+    font-size: 50px;
+  }
 }
