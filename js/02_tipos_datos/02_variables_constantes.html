@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Variables y constantes</title>
+  </head>
+  <body>
+    <h1>Variables y constantes</h1>
+    <h2>Variables: var vs let</h2>
+    <p>
+      Anteriormente se declaraban variables usando la palabra var. Pero habia un problema, puesto
+      que var tenia un alcance global o en la funcion donde estaba definida, pero no era por bloque
+      de codigo como en otros lenguajes de programacion.<br />
+      A partir de EM6, ya se pueden declarar variables de ambito bloque, para ello usamos la palabra
+      let.
+    </p>
+
+    <script>
+      var hola = 'Hola mundoooooooooooooooooooooo';
+      console.log(hola);
+
+      let hello = 'Hello world';
+      console.log(hello);
+
+      //console.log(window);
+
+      console.log('*************variable con var*****************');
+      var diaDeLaSemana = 'miercoles';
+      console.log('variable dia antes del bloque', diaDeLaSemana);
+      {
+        var diadiaDeLaSemana = 'jueves';
+        console.log('variable dia dentro del bloque', diaDeLaSemana);
+      }
+      console.log('variable dia despues del bloque', diaDeLaSemana);
+
+      console.log('*************variable con let*****************');
+      let mes = 'Marzo';
+      console.log('variable mes antes del bloque', mes);
+      {
+        let mes = 'Abril';
+        console.log('variable mes dentro del bloque', mes);
+      }
+      console.log('variable mes despues del bloque', mes);
+    </script>
+
+    <hr />
+
+    <h2>Constantes</h2>
+    <p>
+      Fueron instroducidas en EMC 6. <br />
+      Las constantes se usan cuando sepamos que una variable no va a cambiar su valor durante el
+      flujo de la app. <br />
+      No se pueden tener constantes vacias, es decir, se le debe asignar su valor al momento de ser
+      declarada. <br />
+      Despues de ser asigando su valor, este no podrá ser modificado, si es un dato
+      primitivo(number, string, boolean ). <br />
+    </p>
+
+    <script>
+      const PI = 3.14159265359;
+      console.log(PI);
+    </script>
+
+    <script>
+      /*
+        Declarar una variable que almacene el nombre de una persona, declarar otra variable que almacene su sueldo e imprimir un mensaje que muestr el sueldo y el nombre de la persona
+      */
+
+      /*
+        Declarar variables con el nombre de un estudiante, la estatura, la edad y el numero de documento. Una de estas variables debe ser una constante. Mostrar los datos de forma separada y con su indicador (ej: Nombre: Ana)
+      */
+
+      /*
+        Declarar una variable antes de un bloque, dentro de un bloque con el mismo nombre de la varible anterior, y mostrar su valor antes del bloque, en el bloque y despues del bloque. El valor que muestre antes y despues del bloque debe ser el mismo. El valor que muestre dentro del bloque, debe ser diferente a los valores anteriores
+      */
+    </script>
+  </body>
+</html>
