@@ -1,0 +1,9 @@
+.ellie::after {
+    content: " -> Ellie es Miau Egipcio y tiene 2 años";
+    color: rgb(209, 28, 28);
+  }
+  
+  .morita::after {
+    content: " -> Morita es Siamens y tiene 1 año";
+    color: rgb(51, 114, 151);
+  }
