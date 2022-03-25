@@ -10,18 +10,27 @@ body {
   padding: 0;
 }
 
+.flex-box{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+}
+
 .lado-izquierdo {
-  width: 250px;
+  /*width: 250px;*/
+  width: 20%;
+  
   background-color: rgb(243, 232, 232);
   margin-top: 0;
   margin-left: 0;
   margin-right: 0;
-  padding-right: 5px;
+  padding-right: 10px;
   padding-left: 15px;
   padding-top: 25px;
   
   color: hsl(261, 18%, 49%);
-  position: absolute;
+  /*position: absolute;*/
   text-align: justify;
 }
 
@@ -66,27 +75,26 @@ header div .img-profile {
   width: 150px;
   height: auto;
   position: relative;
-  border-radius: 20%;
+  border-radius: 50%;
   right: 30%;
   bottom: 100px;
-  transition: border-radius linear 1s;
+  /*transition: border-radius linear 1s;*/
   transition: transform ease-in-out 1s;
   transform: scale(auto);
 }
 
 header div .img-profile:hover {
-  border-radius: 50%;
-  transform: scale(2);
-  
+  /*border-radius: 50%;*/
+  transform: scale(1.2);
 }
 
 .menu-navegacion {
-  font-weight: bold;
   font-style: italic;
-  font-variant: small-caps;
+  font-variant: capitalize;
+  font-size: small;
  /* border: 1px solid rgb(250, 0, 33);
  padding-top: 40px 40px 10px 5px;*/
-
+  /*height: 20px;*/
   padding: 5px;
   text-align: center;
   background-color: rgb(235, 228, 228);
@@ -95,13 +103,17 @@ header div .img-profile:hover {
   top:0;
   border-radius: 5px;
   box-shadow: 5px 5px 10px #ccc, -5px -5px 10px #ccc;
-  transition: transform ease-in-out 1s;
-  transform: scale(1);
+  /*transition: transform ease-in-out 1s;
+  transform: scale(1);*/
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
 }
 
-.menu-navegacion:hover {
+/*.menu-navegacion:hover {
   transform: scale(1.2);
 }
+*/
 
 /*.menu-table{
   margin-left: 0px;
@@ -116,10 +128,15 @@ header div .img-profile:hover {
 .menu-navegacion a {
   text-decoration: none;
   color: rgb(128, 128, 128);
-  padding: 15px 0;
-  margin: 10px;
+  padding: 0;
+  margin: 0px;
+  transition: transform ease-in-out 0.3s;
+  transform: scale(1);
 }
 
+.menu-navegacion a:hover {
+  transform: scale(1.1);
+}
 
 .text-gray {
   color: rgb(128, 128, 128);
@@ -133,7 +150,14 @@ h4 {
 }
 
 aside article p {
-  text-align:start ;
+  text-align:start;
+  padding-bottom: 20px;
+  
+}
+
+aside article ul li {
+  text-align:start;
+  
 }
 
 article p {
@@ -152,10 +176,10 @@ article p {
   color: #776794;
 }
 
-section {
-  background-color: azure;
-  margin-left: 20px;
+section { /*.lado-derecho*/
+  margin-left: 5px;
   padding: 20px;
+ 
 }
 
 .formacion {
@@ -169,7 +193,7 @@ ul li {
   text-align: justify;
 }
 
-ul{
+ul {
   margin-bottom: 30px;
   
 }
@@ -181,16 +205,17 @@ h5 {
   margin-bottom: 2px;
 }
 
-.lado-derecho{
- margin-left: 270px;
- padding-left: 5px;
-
+.lado-derecho {
+ /*margin-left: 270px;*/
+ /*padding-left: 5px;*/
+ width:75%;
 }
-.img-contacto{
+
+.img-contacto {
   width: 20px;
   display: block;
 }
-
+/*
 #datos-contacto{
   transform: translate(0px, 0px);
   transition: transform ease-in-out 0.3s;
@@ -199,4 +224,22 @@ h5 {
 #datos-contacto:hover {
   transform: translate(100px, -20px);
 }
+*/
+footer{
+  text-align: center;
+  line-height: 1.5;
+  margin-bottom: 30px;
+}
 
+.img-proyecto {
+  width: 250px;
+  display: block;
+  margin-top: 15px;
+  border-radius: 5px;
+  box-shadow: 5px 5px 10px #ccc, -5px -5px 10px #ccc;
+}
+
+.proyectos{
+  font-weight: bold;
+  font-size: 14px;
+}

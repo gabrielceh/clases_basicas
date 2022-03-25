@@ -67,14 +67,42 @@
       /*
         Declarar una variable que almacene el nombre de una persona, declarar otra variable que almacene su sueldo e imprimir un mensaje que muestr el sueldo y el nombre de la persona
       */
-
+      console.log('*************Ejercicio 1*****************');
+      let nombrePersona = 'Sandra';
+      
+      let sueldoPersona = 4500000;
+     
+      let nominaEmpleado = "Nombre: "+nombrePersona+" - Sueldo: "+sueldoPersona;
+      console.log(nominaEmpleado);  
+           
       /*
         Declarar variables con el nombre de un estudiante, la estatura, la edad y el numero de documento. Una de estas variables debe ser una constante. Mostrar los datos de forma separada y con su indicador (ej: Nombre: Ana)
       */
+      console.log('*************Ejercicio 2*****************');
+      const numDocumento = '12345678';
+      console.log('Número de documento:', numDocumento);
 
+      let nomEstudiante = 'Diego Martinez';
+      console.log('Nombre Estudiante:', nomEstudiante);
+
+      let estaturaEstudiante = `1.66 metros`
+      console.log('Estatura:', estaturaEstudiante);
+
+      let edadEstudiante = `13`
+      console.log('Edad:', edadEstudiante);
+      
       /*
         Declarar una variable antes de un bloque, dentro de un bloque con el mismo nombre de la varible anterior, y mostrar su valor antes del bloque, en el bloque y despues del bloque. El valor que muestre antes y despues del bloque debe ser el mismo. El valor que muestre dentro del bloque, debe ser diferente a los valores anteriores
       */
+      console.log('*************Ejercicio 3*****************');
+      let cena = 'Hamburguesa';
+      console.log('Hoy cenaremos:', cena);
+      {
+        let cena = 'Sopa';
+        console.log('Hoy cenaremos:', cena);
+      }
+      console.log('Hoy cenaremos:', cena);
+
     </script>
   </body>
 </html>
