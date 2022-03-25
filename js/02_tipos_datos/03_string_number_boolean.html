@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <h1>String - Number - boolean - undefined - null - isNaN</h1>
+  <p>Para conocer cual es el tipo de dato, usamos typeof()</p>
+  
+  <section>
+
+    <h2>string</h2>
+    <p>Son cadenas de texto. Pueden ser creadad usanado comillas simples o dobles.
+      <br>
+      Una forma de declararla es con su constructor
+      <pre>let algo = new String("texto")</pre>
+      <br>
+    </p>
+    <h4>Metodos mas comunes</h4>
+    <dl>
+      <dt>string.length</dt>
+      <dd>Longitud de la cadena</dd>
+
+      <dt>string.toLowerCase()</dt>
+      <dd>Pasa la cadena a minusculas</dd>
+
+      <dt>string.toUpperCase()</dt>
+      <dd>Pasa la cadena a mayusculas</dd>
+
+      <dt>string.includes("...")</dt>
+      <dd>devuelve true o false  si encuentra o no una coincidencia en la cadena</dd>
+
+      <dt>string.trim()</dt>
+      <dd>Quita los espacios en blancos al inicio y al final de la cadena</dd>
+
+      <dt>string.split()</dt>
+      <dd>Divide la cadena segun la expresion regular que le pasemos y la convierte en un arreglo</dd>
+
+      <dt>string.charAt(indice)</dt>
+      <dd>Retorna el caracter del indice que le indiquemos</dd>
+
+      <dt>string.substring(pos.inicio, pos.fin)</dt>
+      <dd>Retorna un string extraido de otro. La posicion de inicio es el indice del caracter donde queremos que inicio. la posicion final es el indice del caracter donde queremos que termine pero sin incluirlo</dd>
+
+      <dt>string.indexOf("...")</dt>
+      <dd>Devuelve la posición de la subcadena dentro de la cadena, o -1 en caso de no estar.</dd>
+
+      <dt>string.replace(subcad1, subcad2)</dt>
+      <dd>Reemplaza la subcadena 1 por la subcadena 2 </dd>
+      
+    </dl>
+
+    <script>
+      console.log("**********string**********")
+      let cadena1 = 'Hola mundo, soy una cadena';
+      console.log(cadena1)
+      let cadena2 = new String("Hello world, I'm a string")
+      console.log(cadena2)
+      let cadena3 = "       soy una cadena con espacios         "
+      console.log('typeof cadena1:', typeof(cadena1))
+      console.log('typeof cadena2:', typeof(cadena2))
+      console.log(cadena2.valueOf())
+      console.log(cadena3)
+
+      console.log('gabriel'.length)
+      console.log('length:', cadena1.length)
+      console.log('toLowerCase:', cadena2.toLowerCase())
+      console.log('toUpperCase:', cadena1.toUpperCase())
+      console.log('includes:', cadena1.includes('mundo'))
+      console.log('includes:', cadena1.includes('que'))
+      console.log('trim:', cadena3.trim())
+      console.log('split:', cadena1.split(' '))
+      console.log('charAt:', cadena2.charAt(10))
+      console.log('substring:', cadena2.substring(4,7))
+      console.log('indexOf:', cadena1.indexOf('soya'))
+      console.log('replace:', cadena2.replace('world', 'mundo'))
+      console.log('starstWith:',cadena1.startsWith('O'))
+      console.log('endstWith:',cadena1.endsWith('a'))
+    </script>
+
+     <h4>Template string</h4>
+     <p>La interpolacion es introducir dinamicamente una variable en una cadena de texto. En js usamos template string para esto.
+       <br>
+       Para ello usamos back stick ` ` y para colocar las variables dentro usamos ${nombreVariable} dentro de las back sticks
+     </p>
+     <script>
+       let nombre = 'Gabriel'
+       console.log(`Hola soy ${nombre}`)
+       document.write(`<h3>H3 con template string</h3>`)
+     </script>
+  </section>
+
+  <section>
+    <h2>numbers</h2>
+    <p>Solo tenemos numeros en js, sin importar si son enteros, decimales.
+      <br>
+      Al igual que los strings, lo numeros tambien tienen metodos
+    </p>
+
+    <dl>
+      <dt>number.toFixed()</dt>
+      <dd>redondea un numero segun la cantidad de numeros que le pasemos</dd>
+
+      <dt>parseInt()</dt>
+      <dd>convertirá la cadena en un numero entero</dd>
+
+      <dt>parseFloat()</dt>
+      <dd>Convertira la cadena en un numero flotante</dd>
+
+      <dt>parseFloat()</dt>
+      <dd>Convertira la cadena en un numero flotante</dd>
+
+      <dt>number.valueOf()</dt>
+      <dd>Retorna el valor primitivo inserto en un objeto Number</dd>
+    </dl>
+
+    <script>
+      console.log('**********numbers************')
+      let num1 = 10
+      let num2 = new Number(20)
+      let num3 = 30.43534
+      console.log(num1)
+      console.log(num2)
+      console.log('typeof num1:', typeof(num1))
+      console.log('typeof num2:', typeof(num2))
+
+      console.log('toFixed:',num3.toFixed(0))
+      console.log('parseInt:',parseInt('1000.94'))
+      console.log('parseFloat:',parseFloat('1000.7345'))
+      console.log('valueOf:',num2.valueOf())
+
+
+    </script>
+  </section>
+
+  <section>
+    <h2>booleans</h2>
+    <p>Representan los valores de true o false</p>
+    <p>Hay valores que no son true o false pero que tienden a ello</p>
+    <ul>
+      <li>1 = true</li>
+      <li>2 = true</li>
+      <li>0 = false</li>
+      <li>"hola" = true</li>
+      <li>"" =  false</li>
+    </ul>
+
+    <script>
+      console.log('*********booleans**********')
+      let bandera = true
+      let band2  = new Boolean(null)
+      console.log('typeof:',typeof(bandera))
+      console.log(bandera)
+      console.log('typeof:',typeof(band2))
+
+      console.log('valuesOf:',band2.valueOf())
+
+
+    </script>
+  </section>
+
+  <section>
+    <h2>undefined - null - isNaN</h2>
+    <dl>
+      <dt>undefined</dt>
+      <dd>representa una variable sin valor y que no ha sido inicializada</dd>
+
+      <dt>null</dt>
+      <dd>Representa una variable sin valor pero es intencionalmete inicializada con null</dd>
+
+      <dt>isNaN</dt>
+      <dd>not a number, nos sirve para validar si es un numero o no.</dd>
+    </dl>
+
+    <script>
+      console.log('*********undefined - null - isNaN*********')
+      let und;
+      console.log(und)
+
+      let nula = null
+      console.log(nula)
+
+      console.log(typeof(und))
+
+      let numero = '5'
+      console.log('isNaN:',isNaN(numero))
+
+
+    </script>
+  </section>
+
+  <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+</body>
+</html>
