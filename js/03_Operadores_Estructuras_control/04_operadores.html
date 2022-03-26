@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Operadores</title>
+  </head>
+  <body>
+    <h1>Operadores aritmeticos - comparacion - logicos</h1>
+
+    <h2>Operadores aritmeticos</h2>
+    <p>Son los que realizan funciones aritmeticas en numeros</p>
+    <table border="1">
+      <thead>
+        <tr>
+          <th>Operador</th>
+          <th>Descripcion</th>
+          <th>Ejemplo</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>+</td>
+          <td>Adicion</td>
+          <td>3 + 5 = 8</td>
+        </tr>
+        <tr>
+          <td>-</td>
+          <td>Substracion</td>
+          <td>9 - 5 = 4</td>
+        </tr>
+        <tr>
+          <td>*</td>
+          <td>Multiplicacion</td>
+          <td>10 * 5 = 50</td>
+        </tr>
+        <tr>
+          <td>/</td>
+          <td>Division</td>
+          <td>21 / 3 = 7</td>
+        </tr>
+        <tr>
+          <td>%</td>
+          <td>Modulo. Retorna el resto de la division</td>
+          <td>29 / 3 = 2</td>
+        </tr>
+        <tr>
+          <td>++</td>
+          <td>Incremento. Aumenta el valor numerico en 1.</td>
+          <td>let num = 1 ; num++ ; num ahora vale 2</td>
+        </tr>
+        <tr>
+          <td>--</td>
+          <td>Decremento. Disminuye el valor numerico en 1</td>
+          <td>let num = 2; num--; num ahora vale 1</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <script>
+      console.log('*****Operadores aritmeticos*******');
+      console.log(`Suma(+): ${4 + 5}`);
+      console.log(`Resta(-): ${4 - 5}`);
+      console.log(`Multiplicacion(*): ${4 * 5}`);
+      console.log(`Division(/): ${4 / 5}`);
+      console.log(`Resto(%): ${29 % 3}`);
+
+      let num1 = 1;
+      console.log(`Incremento despues: ${num1++}`);
+      console.log(`Despues del incremento: ${num1}`);
+
+      let num2 = 10;
+      console.log(`Incremento antes: ${++num2}`);
+      console.log(`Despues del incremento: ${num2}`);
+
+      let num3 = 1;
+      console.log(`Decremento despues: ${num3--}`);
+      console.log(`Despues del Decremento: ${num3}`);
+
+      let num4 = 10;
+      console.log(`Decremento antes: ${--num4}`);
+      console.log(`Despues del Decremento: ${num4}`);
+    </script>
+
+    <h2>Operadores de comparacion</h2>
+    <p>
+      Son utilizados en declaraciones logicas para determinar igualdad o diferencia entre variables
+      o valores. Estos retornan true o false.
+    </p>
+    <table border="1">
+      <thead>
+        <tr>
+          <th>Operador</th>
+          <th>Descripcion</th>
+          <th>Ejemplo</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>==</td>
+          <td>Igual que</td>
+          <td>5 == 10 false</td>
+        </tr>
+        <tr>
+          <td>===</td>
+          <td>Identico</td>
+          <td>5 === '5' false</td>
+        </tr>
+        <tr>
+          <td>!=</td>
+          <td>No es igual</td>
+          <td>5 != 'a' true</td>
+        </tr>
+        <tr>
+          <td>!==</td>
+          <td>No es identico</td>
+          <td>10 !== '10' true</td>
+        </tr>
+        <tr>
+          <td>></td>
+          <td>Mayor que</td>
+          <td>4 > 2 true</td>
+        </tr>
+        <tr>
+          <td><</td>
+          <td>Menor qie</td>
+          <td>4 < 2 false</td>
+        </tr>
+        <tr>
+          <td>>=</td>
+          <td>Mayor igual que</td>
+          <td>5 >= 5 true</td>
+        </tr>
+        <tr>
+          <td><=</td>
+          <td>Menor igual que</td>
+          <td>5 <= 4 false</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <script>
+      console.log('*****Operadores de comparacion*******');
+      console.log(`Igual que: 5 == '5': ${5 == '5'}`);
+      console.log(`Identico que: 5 === '5': ${5 === '5'}`);
+      console.log(`Identico que: 5 === 5: ${5 === 5}`);
+      console.log(`Mayor que: 5 > 10: ${5 > 10}`);
+      console.log(`Mayor que: 10 > 5: ${10 > 5}`);
+      console.log(`Menor que: 5 < 10: ${5 < 10}`);
+      console.log(`Menor que: 10 < 5: ${10 < 5}`);
+      console.log(`Mayor Igual que: 5 >= 5: ${5 >= 5}`);
+      console.log(`Mayor Igual que: 7 >= 5: ${7 >= 5}`);
+      console.log(`Menor Igual que: 5 <= 5: ${5 <= 5}`);
+      console.log(`Menor Igual que: 7 <= 5: ${7 <= 5}`);
+    </script>
+
+    <h2>Operadores Logicos</h2>
+    <p>Evaluan una expresion y retornan true o false</p>
+    <table border="1">
+      <thead>
+        <tr>
+          <th>Operador</th>
+          <th>Descripcion</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>&&</td>
+          <td>(Y): retorna true si ambas expresiones son verdaderas</td>
+        </tr>
+        <tr>
+          <td>||</td>
+          <td>(O): retorna true si una de las expresiones es verdader</td>
+        </tr>
+        <tr>
+          <td>!</td>
+          <td>(NO): retorna true si la expresion es falsa, y false si la expresion es verdadera</td>
+        </tr>
+      </tbody>
+    </table>
+    <script>
+      console.log('*****Operadores logicos*******');
+      console.log(`Operador &&: (3 > 4) && ( 5 === 5): ${3 > 4 && 5 === 5}`);
+      console.log(`Operador &&: (4 > 3) && ( 5 === 5): ${4 > 3 && 5 === 5}`);
+      console.log(`Operador ||: (3 < 4) || ( 5 === '5'): ${3 < 4 || 5 === '5'}`);
+      console.log(`Operador ||: (2 < 3) || ( 5 === 5): ${2 > 3 || 5 === 5}`);
+      console.log(`Operador ||: (2 > 3) || ( 5 === '5'): ${2 > 3 || 5 === '5'}`);
+      console.log(`Operador !: !(3 > 2) : ${!(3 > 2)}`);
+      console.log(`Operador !: !(3 < 2) : ${!(3 < 2)}`);
+      console.log(`Operador !: !(true) : ${!true}`);
+      console.log(`Operador !: !(false) : ${!false}`);
+    </script>
+  </body>
+</html>

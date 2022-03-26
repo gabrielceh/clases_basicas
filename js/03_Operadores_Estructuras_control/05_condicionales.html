@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Condicionales</title>
+  </head>
+  <body>
+    <h1>Condicionales (if)</h1>
+    <p>
+      A menudo cuando se escribe codigo, se desea ejecutar diferentes acciones basado en diferentes
+      condiciones. Para ello utilizamos las condiciones en el codigo.
+      <br />
+      Se utiliza la declaracion if para especificar un bloque de codigo que se ejecutará su la
+      condicion es verdadera.
+    </p>
+    <!-- <script>
+      let edad = 17;
+      let nombre = 'Sandra';
+
+      /*if (edad <= 18) {
+        console.log(`${nombre} eres mayor de edad, puedes votar`);
+        console.log(`${nombre} eres mayor de edad, puedes tomar alcohol`);
+      }*/
+
+      if (edad >= 18) console.log(`${nombre} eres mayor de edad, puedes votar`);
+      console.log(`${nombre} eres mayor de edad, puedes tomar alcohol`);
+
+      console.log('fin del codigo');
+
+      let animal = 'vaca';
+
+      if (animal === 'perro') {
+        console.log('El perro hace guauuu');
+      }
+      if (animal === 'gato') {
+        console.log('El gato hace meooow');
+      }
+
+      console.log('fin del programa animal');
+    </script> -->
+
+    <h2>Declaracion if-else</h2>
+    <p>La declaracion else ejecutara un bloque de codigo si la declaracion del if es falsa.</p>
+    <!-- <script>
+      let color = 'Rojo';
+      let validarColor = 'rojo';
+
+      if (color.toLowerCase() === validarColor.toLowerCase()) {
+        console.log('El rojo es el color de la sangre');
+      } else {
+        console.log('Este color no es rojo');
+      }
+
+      console.log('fin del codigo');
+    </script> -->
+
+    <h3>declaracion else-if</h3>
+    <p>Especifica una nueva condicion si la primera o la anterior es falsa</p>
+    <script>
+      //let animal2 = 'lobo';
+
+      let animal2 = prompt('Ingrese un animal en minuscilas');
+
+      if (animal2.toLowerCase() === 'perro') {
+        alert('El perro hace guauuu');
+      } else if (animal2.toLowerCase() === 'gato') {
+        alert('El gato hace meooow');
+      } else if (animal2.toLowerCase() === 'vaca') {
+        alert('La vaca hace muuuuuuuuu');
+      } else {
+        alert(`${animal2.toLowerCase()} hace ruido`);
+      }
+
+      console.log('fin del codigo');
+    </script>
+  </body>
+</html>
