@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>While</title>
+  </head>
+  <body>
+    <h1>bucle while(mientras)</h1>
+    <p>
+      Una estructura repetitiva o bucle permite ejecutar una instrucción o un conjunto de
+      instrucciones varias veces.
+    </p>
+    <p>
+      El blucle while verifica la condición, si la misma resulta verdadera se ejecutan las
+      operaciones que indicamos entre las llaves que le siguen al while. En caso que la condición
+      sea Falsa continúa con la instrucción siguiente al bloque de llaves. El bloque se repite
+      MIENTRAS la condición sea Verdadera.
+      <br />
+      Si la condicion SIEMPRE es verdadera, es un error de programación, ya que el bloque de codigo
+      se estara ejecutando de forma infinita.
+    </p>
+
+    <script>
+      console.log('*****Bucle while******');
+
+      let num = 1;
+
+      while (num <= 10) {
+        console.log(num);
+        num = num + 1;
+      }
+
+      console.log('tabla de multiplicar');
+
+      let num2 = 9;
+      let acumulador = 10;
+
+      while (acumulador <= 10 && acumulador > 0) {
+        console.log(`${num2} * ${acumulador} = ${num2 * acumulador}`);
+        acumulador--;
+      }
+
+      console.log('Menu');
+
+      let opcion = prompt(`
+      Escoja una opcion
+        1. Mostrar hola
+        2. Mostrar el numero 1
+        3. Mostrar un emoji
+        4. Salir
+      `);
+
+      while (opcion !== '4') {
+        switch (opcion) {
+          case '1':
+            console.log('hola');
+            break;
+          case '2':
+            console.log(1);
+            break;
+          case '3':
+            console.log('😎');
+            break;
+          default:
+            console.log('Opcion no valida');
+            break;
+        }
+
+        opcion = prompt(`
+      Escoja una opcion
+        1. Mostrar hola
+        2. Mostrar el numero 1
+        3. Mostrar un emoji
+        4. Salir
+      `);
+      }
+
+      console.log('Saliste del menu');
+    </script>
+
+    <script>
+      /*
+        Realizar el menu de un cajero automatico. El menu debe tener las siguientes opciones:
+          1. Consultar el saldo
+          2. Realizar consignacion y mostrar nuevo saldo
+          3. Realizar retiro y mostrar nuevo saldo
+          4. Salir
+      */
+    </script>
+  </body>
+</html>

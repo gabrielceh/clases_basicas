@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>switch</title>
+</head>
+<body>
+  <h1>Estructura Switch</h1>
+  <p>Nos sirve para evaluar si un valor es igual a otro, pero no para comparar si es mayor o menor.
+    <br>
+    Puede reemplazar al if en algunas situaciones.
+    <br>
+    Su sintaxis es la sgte:
+    <pre>
+      switch(valor){
+        case algo:
+          //codigo
+          break;
+        case algoMas:
+          //codigo
+          break;
+        ...
+        default:
+          //codigo
+          break;
+      }
+    </pre>
+    
+  </p>
+
+  <script>
+    console.log('*******switch*******')
+    /*let num = prompt('Ingrese un numero del uno al 6');
+    switch(num){
+      case '1': 
+        console.log('case "1":Uno')
+        break;
+      case '2':
+        console.log('case "2":Dos')
+        break;
+      case '3':
+        console.log('case "3":Tres')
+        break;
+      case '4':
+        console.log('case "4":Cuatro')
+        break;
+      case '5':
+        console.log('case "5":Cinco')
+        break;
+      case '6':
+        console.log('case "6":Seis')
+        break;
+      default:
+        console.log('Ingrese un numero entre 1 y 6')
+    }*/
+
+    let color = (prompt('Ingrese un color en español: ')).toLowerCase()
+    s
+    switch(color){
+      case 'rojo':
+        console.log('red');
+        break;
+      case 'azul':
+        console.log('blue');
+        break;
+      case 'amarillo':
+        console.log('yellow');
+        break;
+      case 'verde':
+        console.log('green')
+        break;
+      case 'blanco': 
+        console.log('white')
+        break;
+      case 'negro':
+        console.log('black')
+        break;
+      default:
+        console.log('El color no esta en la db')
+        break;
+    }
+    
+
+    /*
+    if(color === 'rojo'){
+      console.log('red');
+    }
+    else if(color === 'azul'){
+      console.log('blue');
+    }
+    else if(color === 'verde'){
+      console.log('green');
+    }
+    else if(color === 'amarillo'){
+      console.log('yellow');
+    }
+    else if(color === 'blanco'){
+      console.log('white');
+    }
+    else if(color === 'negro'){
+      console.log('black');
+    }
+    else{
+      console.log('El color ingresado no esta en la db');
+    }*/
+  </script>
+
+  <p>
+    Debemos tener en cuenta que la variable que analizamos debe ir después de la instrucción switch entre paréntesis. Cada valor que se analiza debe ir luego de la palabra clave 'case' y seguido a los dos puntos, las instrucciones a ejecutar, en caso de verificar dicho valor la variable que analiza el switch.
+    <br>
+    Es importante disponer la palabra clave 'break' al finalizar cada caso. La instrucciones que hay después de la palabra clave 'default' se ejecutan en caso que la variable no se verifique en algún case. De todos modos el default es opcional en esta instrucción.
+  </p>
+</body>
+</html>
