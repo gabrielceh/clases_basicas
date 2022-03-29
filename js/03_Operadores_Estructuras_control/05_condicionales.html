@@ -58,10 +58,10 @@
 
     <h3>declaracion else-if</h3>
     <p>Especifica una nueva condicion si la primera o la anterior es falsa</p>
-    <script>
+    <!--<script>
       //let animal2 = 'lobo';
 
-      let animal2 = prompt('Ingrese un animal en minuscilas');
+      let animal2 = prompt('Ingrese un animal en minusculas');
 
       if (animal2.toLowerCase() === 'perro') {
         alert('El perro hace guauuu');
@@ -73,21 +73,53 @@
         alert(`${animal2.toLowerCase()} hace ruido`);
       }
 
-      console.log('fin del codigo');
+      console.log('fin del codigo'); -->
     </script>
 
     <script>
       /*
         Ingresar por teclado el nombre y la nota de un estudiante(1-10). Mostrar un mensaje si el estudiante aprobó (se aprueba con 6)
       */
-
+      /*let nombreEstudiante = prompt(`Ingresa nombre del estudiante:`);
+      let notaEstudiante = prompt(`Ingresa nota:`);
+      if (notaEstudiante >= 6) {
+        alert(`Estudiante ${nombreEstudiante} Aprobo`);
+      }
+      console.log('fin del codigo');*/
+      
       /*
         Ingresar por teclado el nombre y la nota de un estudiante(1-10). Mostrar un mensaje si el estudiante aprobó o no (se aprueba con 6)
       */
-
+      /*let nombreEstudiante = prompt(`Ingresa nombre del estudiante:`);
+      let notaEstudiante = prompt(`Ingresa nota:`);
+      if (notaEstudiante >= 6) {
+        alert(`Estudiante ${nombreEstudiante} Aprobo`);
+      } else {
+        alert(`Estudiante ${nombreEstudiante} No Aprobo`);
+      }
+      console.log('fin del codigo');*/
       /*
         Ingresar por teclado el nombre de un estudiante y tres notas(1-10). Calcular el promedio y mostrar un mensaje si el estudiante saco un promocionado(7 en adelante), regular (6), desaprobado (menor a 6)
       */
+      let nombreEstudiante = prompt(`Ingresa nombre del estudiante:`);
+      let nota1 = prompt(`Ingresa nota 1:`);
+      let nota2 = prompt(`Ingresa nota 2:`);
+      let nota3 = prompt(`Ingresa nota 3:`);
+      let notaFinal = ((parseFloat(nota1)+parseFloat(nota2)+parseFloat(nota3))/3).toFixed(2);
+
+      if ((nota1 > 0 && nota1 <= 10) && (nota2 > 0 && nota2 <= 10) && (nota3 > 0 && nota3 <= 10)){
+        if (notaFinal >= 7) {
+        alert(`Estudiante:  ${nombreEstudiante.toLowerCase()} - Nota Final: ${notaFinal} - Estado: Promocionado`);
+        } else if (notaFinal >= 6 && notaFinal < 7) {
+        alert(`Estudiante: ${nombreEstudiante.toLowerCase()} - Nota Final: ${notaFinal} - Estado: Regular`);
+        } else {
+        alert(`Estudiante:  ${nombreEstudiante.toLowerCase()} - Nota Final: ${notaFinal} - Estado: Desaprobo`);
+        }
+      } else {
+        alert(`Nota fuera del Rango, digite solo números del 1 al 10`)
+      }
+      console.log('fin del codigo');
+      
     </script>
   </body>
 </html>
