@@ -22,7 +22,7 @@
       se estara ejecutando de forma infinita.
     </p>
 
-    <script>
+    <!--<script>
       console.log('*****Bucle while******');
 
       let num = 1;
@@ -78,16 +78,64 @@
       }
 
       console.log('Saliste del menu');
-    </script>
-
+    </script> 
+  -->
     <script>
       /*
         Realizar el menu de un cajero automatico. El menu debe tener las siguientes opciones:
-          1. Consultar el saldo
+          1. Consultar saldo
           2. Realizar consignacion y mostrar nuevo saldo
           3. Realizar retiro y mostrar nuevo saldo
           4. Salir
       */
+
+      let menuCajero = prompt(`
+      Escoja una opcion
+        1. Consultar saldo
+        2. Realizar consignacion y mostrar nuevo saldo
+        3. Realizar retiro y mostrar nuevo saldo
+        4. Salir
+      `);
+
+      let saldo  = 5000000;
+      
+      while (menuCajero !== '4') {
+        switch (menuCajero) {
+          case '1':
+            alert(`Saldo: ${saldo}`);
+            break;
+          case '2': 
+            let consignacion = parseInt(prompt(`Ingrese monto a consignar`));
+            saldo = saldo + consignacion;            
+              alert(`Nuevo saldo: ${saldo}`);
+            break;
+          case '3':
+            let retiro = parseInt(prompt(`Ingrese monto a retirar`));
+            if (retiro > saldo || saldo === 0){
+              alert(`No es posible realizar transacción, saldo insuficiente`) 
+            }else{
+              saldo = saldo - retiro;
+                alert(`Retiro exitoso por ${retiro} Nuevo saldo: ${saldo}`);
+              break;
+            }                       
+          default:
+            console.log('Opcion no valida');
+            break;
+        }
+            
+        menuCajero = prompt(`
+      Escoja una opcion
+        1. Consultar el saldo
+        2. Realizar consignacion y mostrar nuevo saldo
+        3. Realizar retiro y mostrar nuevo saldo
+        4. Salir
+      `);
+      }
+
+      console.log('Saliste del menu');
+    
     </script>
+   
+
   </body>
 </html>
