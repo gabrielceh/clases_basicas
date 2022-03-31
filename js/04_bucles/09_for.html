@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>for</title>
+  </head>
+  <body>
+    <h1>Bucle for</h1>
+    <p>
+      Esta es la estructura repetitiva mas comun para realizar bucles.
+      <br />
+      Consta de 3 partes:
+      <br />
+      Declaracion 1: es ejecutada antes de que bucle comience
+      <br />
+      Declaracion 2: Es la condicion para ejecutar el bucle
+      <br />
+      Declaracion 3: Se ejecuta cada vez y despues que el codigo ha sido ejecutado.
+
+      <pre>
+        for(let i = 0; i <= 10; i++){
+          //codigo
+        }
+      </pre>
+    </p>
+
+    <script>
+      let i;
+      for(i = 0; i <= 10; i++){
+        console.log(`i: ${i}`)
+      }
+
+      console.log('Tabla de multiplicar')
+
+      let num = 9
+      for(let i = 1; i <= 10; i++){
+        console.log(`${num} * ${i} = ${num * i}`);
+      }
+
+      /*
+        Ingresar 5 numeros y realizar la suma de los 3 ultimos
+      */
+
+      /*
+      let num1 = parseInt(prompt('Ingrese un numero 1'))
+      let num2 = parseInt(prompt('Ingrese un numero 2'))
+      let num3 = parseInt(prompt('Ingrese un numero 3'))
+      let num4 = parseInt(prompt('Ingrese un numero 4'))
+      let num5 = parseInt(prompt('Ingrese un numero 5'))
+
+      console.log(`la suma de los 3 ultimos es: ${num3 + num4 +num5}`)
+      */
+
+      let suma = 0
+      let cantMax = 10
+
+      for(let i = 1; i <= cantMax; i++){
+        let num = parseInt(prompt(`Ingrese el numero: `))
+        if(cantMax === i || i === cantMax-1 || i === cantMax -2){
+          suma = num + suma
+        }
+      }
+
+      console.log(`la suma de los 3 ultimos es: ${suma}`)
+
+    </script>
+
+    <script>
+      /*
+        Ingresar un numero del 1 al 10, y realizar su tabla de multiplicar desde el 2 hasta el 12
+      */
+
+      /*
+        Ingresar 10 numeros enteros por teclado:
+          * Cuantos numeros negativos se ingresasn?
+          * Cuantos positivos se ingresa?
+          * Cuantos ceros se ingresan?
+      */
+
+      /*
+        Ingrear 5 cordernas (x,y) de un plano: 
+          * cuantas coordenadas estan en el primer cuadrante
+          * cuantas coordenadas estan en el segundo cuadrante
+          * cuantas coordenadas estan en el tercero cuadrante
+          * cuantas coordenadas estan en el cuarto cuadrante
+      */
+
+    </script>
+  </body>
+</html>

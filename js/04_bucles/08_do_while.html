@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Do while</title>
+  </head>
+  <body>
+    <h1>Bucle do... while</h1>
+    <p>
+      Es una variante del bucle while. Este ejecutara el codigo una vez antes de realizar la
+      validacion de la condicion.
+    </p>
+
+    <script>
+      let i = 21;
+
+      /*
+      while (i <= 20) {
+        console.log(i);
+        i++;
+      }
+      */
+
+      /*
+      do {
+        console.log(i);
+        i++;
+      } while (i <= 20);
+      */
+
+      let validacionUsuario;
+      let validarContraseña;
+
+      /*
+      while (validacionUsuario === 'gabo') {
+        validacionUsuario = prompt('ingrese su usario');
+        if ('gabo' !== validacionUsuario) {
+          alert('Usuario no valido');
+        }
+      }
+      */
+
+      do {
+        validacionUsuario = prompt('ingrese su usario');
+        validacionContraseña = prompt('ingrese su contraseña');
+        if ('gabo' !== validacionUsuario) {
+          alert('Usuario no valido');
+        }
+        if ('123' !== validacionContraseña) {
+          alert('Contraseña no valido');
+        }
+      } while (validacionUsuario !== 'gabo' && validarContraseña !== '123');
+
+      console.log('Bienvenido');
+    </script>
+  </body>
+</html>
