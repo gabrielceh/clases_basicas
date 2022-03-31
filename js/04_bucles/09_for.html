@@ -53,7 +53,7 @@
       console.log(`la suma de los 3 ultimos es: ${num3 + num4 +num5}`)
       */
 
-      let suma = 0
+      /*let suma = 0
       let cantMax = 10
 
       for(let i = 1; i <= cantMax; i++){
@@ -63,7 +63,7 @@
         }
       }
 
-      console.log(`la suma de los 3 ultimos es: ${suma}`)
+      console.log(`la suma de los 3 ultimos es: ${suma}`)*/
 
     </script>
 
@@ -71,21 +71,97 @@
       /*
         Ingresar un numero del 1 al 10, y realizar su tabla de multiplicar desde el 2 hasta el 12
       */
+      
+    
+           
+      /*console.log('Tabla de multiplicar')
 
+      let numero = parseInt(prompt(`Ingrese numero: `)); 
+      if (numero <= 10 && numero > 0){
+        for(let index = 2; index <= 12; index++){
+          console.log(`${numero} * ${index} = ${numero * index}`);
+        }
+      }
+      else{
+        alert(`Número debe ser entre 1 y 10`);
+      }
+     */
+      
       /*
         Ingresar 10 numeros enteros por teclado:
-          * Cuantos numeros negativos se ingresasn?
+          * Cuantos numeros negativos se ingresan?
           * Cuantos positivos se ingresa?
           * Cuantos ceros se ingresan?
       */
 
+      
+      /*let cantNumero = 10;
+      let numPositivos = 0;
+      let numNegativos = 0;
+      let numCeros = 0;
+      
+      for(let index = 1; index <= cantNumero;  index++){
+        numero = parseInt(prompt(`Ingrese numero: `));
+        if(numero < 0){
+          numNegativos += 1;       
+          }else if(numero > 0){              
+            numPositivos += 1;      
+            }else if(numero === 0){              
+              numCeros += 1;      
+              }            
+      }
+
+      alert(`Total números positivos: ${numPositivos} Total números negativos: ${numNegativos} 
+      Total números ceros: ${numCeros}`);
+    */  
+    
+
+
       /*
-        Ingrear 5 cordernas (x,y) de un plano: 
+        Ingrear 5 coordernas (x,y) de un plano: 
           * cuantas coordenadas estan en el primer cuadrante
           * cuantas coordenadas estan en el segundo cuadrante
           * cuantas coordenadas estan en el tercero cuadrante
           * cuantas coordenadas estan en el cuarto cuadrante
       */
+     
+      
+      let cantCoord = 5;
+      let primerCuadrante = 0; 
+      segundoCuadrante = 0;
+      tercerCuadrante = 0;
+      cuartoCuadrante = 0;
+      origen  = 0;
+            
+      for(let i = 1; i <= cantCoord; i++){
+       
+        let x = parseInt(prompt(`Ingrese coordenada x: `));
+        let y = parseInt(prompt(`Ingrese coordenada y: `));
+        
+        
+        if(x > 0 && y > 0){
+          primerCuadrante +=1;    
+        }else if(x < 0 && y > 0){     
+           segundoCuadrante +=1;      
+          }else if(x < 0 && y < 0){
+            tercerCuadrante +=1;
+            }else if(x > 0 && y < 0){
+              cuartoCuadrante +=1;
+              }else if(x === 0 && y === 0){
+                origen +=1;
+               }else if(x === 0 && y === 0){
+                origen +=1;
+               }
+        else{
+         alert(`Vuelve a digitar las Coordenadas`);
+        }
+
+      }
+
+      alert(`Total primer cuadrante: ${primerCuadrante} Total segundo cuadrante: ${segundoCuadrante} 
+      Total tercer cuadrante: ${tercerCuadrante} Total cuarto cuadrante: ${cuartoCuadrante} Total origen: ${origen}`);
+     
+
 
     </script>
   </body>
