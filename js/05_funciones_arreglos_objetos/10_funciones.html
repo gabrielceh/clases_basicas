@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Funciones</title>
+  </head>
+  <body>
+    <h1>Funciones</h1>
+    <p>
+      Una funcion es un bloque de codigo autocontenido, que se definirá una vez y se reutilizara las
+      veces que sea necesarias.
+
+      <br />
+      La herramienta más potente con que se cuenta para facilitar, reducir y dividir el trabajo en
+      programación, es escribir aquellos grupos de sentencias una sola y única vez bajo la forma de
+      una FUNCION.
+      <br>
+      Las funciones en js tienen la sgte estructura:
+      <pre>
+        function nombreDeLaFuncion () {
+          // codigo a ejecutar 
+        }
+      </pre>
+      <br>
+      Al momento de nombrar una funcion, debemos tener en cuenta cual sera el objetivo de esta para que sepamos con mas claridad que es lo que hara ese bloque de codigo.
+      <br />
+      Para ejecutar una funcion es necesario llamarla. Para ello, comienza con el nombre de la funcion, luego con los argumentos si es que tiene.
+      <br>
+
+      Las funciones pueden o no recibir parametros y pueden o no retornar un valor.
+    </p>
+    <!-- <script>
+      console.log('**********Funciones************');
+      function saludar() {
+        console.log('Hola');
+        console.log('Esto es una funcion');
+      }
+
+      function tablaMultiplicar () {
+        console.log('***Tabla de multiplicar***')
+        let num = 10
+        for(let i = 0; i <= 10; i++){
+          console.log(`${num} * ${i} = ${num * i}`)
+        }
+      }
+      
+      tablaMultiplicar()
+      saludar();
+      saludar();
+      tablaMultiplicar()
+    </script> -->
+
+    <h3>Funciones con parametros</h3>
+    <p>
+      Reciben en sus parentisis una o varios parametros que podemos usar dentro de la funcion.
+      <br>
+      Al igual que las variables, a los parametros se les debe dar nombres, que se separan por comas dentro de los parentesis.
+      <pre>
+        function nombreDeLaFuncion (parametro1, parametro2,...) {
+          // codigo a ejecutar 
+        }
+      </pre>
+      <br>
+      Cuando llamamos a la funcion, le proveemos el valor del parametro, llamado argumento, entre parentesis. Cuando la funcion recibe varios parametros, los argumentos deben pasarse en el orden en el que los definiste. 
+    </p>
+
+    <!-- <script>
+      console.log('**********Parametros************')
+      function sumar (num1, num2){
+        console.log(`${num1} + ${num2} = ${num1 + num2}`)
+      }
+
+      function tablaMultiplicar(num, cant) {
+        console.log('***Tabla de multiplicar***')
+        for(let i = 1; i <= cant; i++){
+          console.log(`${num} * ${i} = ${num * i}`)
+        }
+      }
+      
+
+      sumar(1,2)
+      sumar(5,9)
+      tablaMultiplicar(5, 10)
+      tablaMultiplicar(9, 20)
+      tablaMultiplicar(11, 6)
+    </script> -->
+
+    <h3>Parametros por defecto</h3>
+    <p>
+      Se le pueden asignar parametros por defecto a una funcion, igualando el parametro a un valor.
+    </p>
+
+    <pre>
+      function nombreDeLaFuncion (parametro1, parametro2 = valor) {
+        // codigo a ejecutar 
+      }
+    </pre>
+
+    <!-- <script>
+      console.log('**********Parametros por defecto************')
+      
+      function hacerSonido( sonido = 'grrrrrrrr', animal='un animal'){
+        console.log(`Hola, soy un ${animal} y hago ${sonido}`)
+      }
+
+      hacerSonido('Woof-woof','perro')
+      hacerSonido('meow-meow','gato')
+      hacerSonido('ruidos')
+      hacerSonido()
+      
+      function tablaMultiplicar(num, cant=10){
+        console.log('***Tabla de multiplicar***')
+        for(let i = 1; i <= cant; i++){
+          console.log(`${num} * ${i} = ${num * i}`)
+        }
+      }
+
+      tablaMultiplicar(5,5)
+      tablaMultiplicar(9)
+      
+    </script> -->
+
+
+    <h3>Funciones que retornan un valor</h3>
+    <p>
+      La sentencia return finaliza la ejecución de la función y especifica un valor para ser devuelto a quien llama a la función.
+
+      <br>
+
+      Esta declaracion (return) es util cuano hacemos calculos que requieran un resultado. Si no se retorna ningun valor desde la funcion, esta devolverá undefined. 
+
+      <pre>
+        function nombreDeLaFuncion (parametro1, parametro2,...) {
+          // codigo a ejecutar 
+          return valorARetornar
+        }
+      </pre>
+    </p>
+
+    <!-- <script>
+      console.log('**********Return************')
+      function restar (num1, num2){
+        return num1 - num2
+      }
+
+      console.log(restar(5,3))
+      console.log(restar(8,15))
+      let resultado = restar(9,4)
+      console.log('El resultado es:', resultado)
+
+      function validarNumero (num) {
+        if(isNaN(num)){
+          return false;
+        }
+        
+        return true;
+      }
+
+
+      
+      tablaMultiplicar(5,'5')
+      
+      function tablaMultiplicar(num, cant=10){
+
+        let validacionDelNumero = validarNumero(num)
+        let validacionDeLaCantidad = validarNumero(cant)
+
+        //console.log(validacionDelNumero)
+        //console.log(validacionDeLaCantidad)
+
+        if(!validacionDelNumero || !validacionDeLaCantidad){
+          alert('Numero o cantidad no valida')
+          return
+        }
+        
+
+        console.log('***Tabla de multiplicar***')
+        for(let i = 1; i <= cant; i++){
+          console.log(`${num} * ${i} = ${num * i}`)
+        }
+      }
+
+
+
+    </script> -->
+
+
+    <h3>Funciones declaradas y funciones expresadas</h3>
+    <p>
+      Las funciones declaradas son las que hemos venido trabajando hasta el momento. Estas funciones tienen la particularidad de poder llamarse incluso antes de haber sido declaradas. Esto es a causa del hoisting como sucede con var.
+    </p>
+    <p>Las funciones expresadas son funciones que se le asigna como valor a una variable o constante, por lo general a constantes, ya que su valor como funcion no cambiará. NO pueden invocarse antes de ser declaradas</p>
+
+    <pre>
+      const nombreFuncion = function(){
+        //...
+      }
+    </pre>
+
+    <!-- <script>
+      console.log('**********funciones declaradas y expresadas************')
+      console.log('**funcion declarada**')
+      
+      declarada('Sandra')
+      
+      function declarada(nombre){
+        console.log(`Adios ${nombre}`)
+      }
+      
+      console.log('**funcion expresada**')
+      
+      const expresada = function(nombre){
+        console.log(`Hola, soy ${nombre}`)
+      }
+      
+      expresada('Angie')
+
+    </script> -->
+
+
+
+
+
+    <script>
+      /*
+        Escribir un mensaje que se repita 5 veces. Usar primero la forma sin funciones y luego usar funciones.
+      */
+
+      /*
+        Escribir una funcion que reciba como parametro el nombre y sueldo de una persona. Mostrar los datos de diferentes personas en consola.
+      */
+
+      /*
+        Escribir una funcion que realice multiplicaciones. Debe retornar el valor dde varias multiplicaciones y mostrarlo en consola
+      */
+    </script>
+  </body>
+</html>
