@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Arrays</title>
+</head>
+<body>
+  <h1>Arrays(Arreglos)</h1>
+  <p>Los arreglos son similares a una lista, imagina la lista de compras, donde tienes un conjunto de datos.
+    <br>
+    Igualmente podemos comparar los array como una canasta en la que almacenamos un conjunto de objetos o datos.
+    <br>
+    Los arreglos nos proporcionan metodos para efectuar operaciones de recorrido y mutacion.
+    <br>
+    Para declarar un arreglo tenemos varias formas:
+    <pre>
+        let frutas = ['manzana', 'piña', 'naranja']
+      o
+        let frutas = new Array('manzana', 'piña', 'naranja')
+    </pre>
+  </p>
+
+  <!-- <script>
+    let fruta1 = 'manzana'
+    let fruta2 = 'piña'
+    let fruta3 = 'naranja'
+
+    let frutas = new Array('manzana', 'piña', 'naranja')
+    let frutas2 = ['manzana', 'piña', 'naranja']
+    console.log(frutas)
+    console.log(frutas2)
+  </script> -->
+
+  <p>
+    Para acceder a un elemento de un arreglo, debemos escribir el el nombre del arreglo y entre corchetes la posicion del elemento. El primer elemento siempre será 0, el segundo 1, el tercero 2, y asi sucesivamente.
+    <pre>
+      frutas[0] //esto mostrara manzana
+      frutas[1] //esto mostrara piña
+    </pre>
+    Si accedemos a una posicion que no esta definida, devolvera undefined.
+    <pre>
+      frutas[3] //undefined
+    </pre>
+  </p>
+
+  <!-- <script>
+    let frutas = new Array('manzana', 'piña', 'naranja')
+    console.log(`primer elemento - posicion 0: ${frutas[0]}`)
+    console.log(`segundo elemento - posicion 1: ${frutas[1]}`)
+    console.log(`tercer elemento - posicion 2: ${frutas[2]}`)
+    console.log(`cuarto elemento - posicion 3: ${frutas[3]}`)
+  </script> -->
+
+  <p>
+    Tenemos diferentes formas de declarar arreglos, una de esas formas es indicar la cantidad de elementos que tendrá  o dejandolo vacio y posteriormente añadir los elementos:
+    <pre>
+        let frutas = new Array(3)
+        frutas[0] = 'manzana'
+        frutas[1] = 'piña'
+        frutas[2]='naranja'
+
+      o
+
+        let frutas = [] o let frutas = new Array()
+        frutas[0] = 'manzana'
+        frutas[1] = 'piña'
+        frutas[2]='naranja'
+
+    </pre>
+  </p>
+  <!-- <script>
+    let frutas = new Array(4)
+      frutas[0] = 'lulo'
+      frutas[1] = 'piña'
+      frutas[2] = 'sandia'
+
+    let frutas2 = []
+      frutas2[0] = 'mango';
+      frutas2[1] = 'melocoton'
+
+    let datos = ['Juan', 56, false, [1,2,3]]
+
+      console.log(frutas)
+      console.log(frutas2)
+      console.log(datos)
+  </script> -->
+
+  <h2>Mostrando y rellenando arreglos dinamicamente</h2>
+  <p>
+    Ya vimos como mostrar elementos de un arreglo uno por uno. Sin embargo si queremos mostrar todos los elementos de un arreglo podemos hacerlo tambien mediante los bucles. El bucle for nos ayudara mucho para esto.
+  </p>
+
+  <!-- <script>
+    let cantidadDeElementos = 5
+    let frutas = ['🍎','🍍','🍊','🍉','🍌']
+
+    for(let i = 0; i < cantidadDeElementos; i++){
+      console.log(`fruta en la posicion ${i}: ${frutas[i]}`)
+    }
+  </script> -->
+
+  <p>
+    Igualmente podemos usar los bucles para llenar un arreglo de forma dinamica
+  </p>
+  <!-- <script>
+    let cantEle = 3
+    let nombres = []
+
+    console.log(nombres)
+
+    for(let i = 0; i < cantEle; i++){
+      let name = prompt('Ingrese un nombre')
+      nombres[i] = name
+    }
+
+    for(let index = 0; index < cantEle; index++){
+      console.log(`Nombre en la posicion ${index}: ${nombres[index]}`)
+    }
+
+  </script> -->
+
+  <script>
+
+    /*
+      Crear dos vectores. En el primero almacenar los meses del año. En el segundo, almacenar los dias que tiene cada mes del año. Crear una funcion que solicite un mes del año y muestre cuantos dias tiene dicho mes.
+    */
+
+    /*
+      Realizar un programa que pida la carga de dos vectores numéricos. Obtener la suma del primer elemento de cada vector, del segundo elemento, etc, y dicho resultado guardarlo en un tercer vector del mismo tamaño. Finalmente Mostrar todos 3 vectores. Utiliza funciones.
+    */
+  </script>
+
+</body>
+</html>
