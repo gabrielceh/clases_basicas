@@ -126,10 +126,61 @@
     /*
       Crear dos vectores. En el primero almacenar los meses del año. En el segundo, almacenar los dias que tiene cada mes del año. Crear una funcion que solicite un mes del año y muestre cuantos dias tiene dicho mes.
     */
+    /*function diasMes(meses, dias){
+      let mes = parseInt(prompt(`Ingrese número del mes: `));
+      alert(`El mes de ${meses[mes - 1]} tiene ${dias[mes - 1]} dias`);
+    
 
+    }
+      let meses= ["Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre"];
+      let dias = [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31];
+      diasMes(meses,dias);
+      */
     /*
       Realizar un programa que pida la carga de dos vectores numéricos. Obtener la suma del primer elemento de cada vector, del segundo elemento, etc, y dicho resultado guardarlo en un tercer vector del mismo tamaño. Finalmente Mostrar todos 3 vectores. Utiliza funciones.
     */
+   
+    let cant = 3;
+    let vector1 = new Array(cant);
+    let vector2 = new Array(cant);
+    let vectorsuma = new Array(cant);
+
+
+    function cargarVectores(vector1, vector2){
+      for (let index = 0; index < cant; index++){
+        let elementos = prompt(`Ingrese elemento del primer vector: `);
+        vector1[index] = parseInt(elementos);          
+      }
+      for (let index = 0; index < cant; index++){
+        let elementos = prompt(`Ingrese elemento del segundo vector: `);
+        vector2[index] = parseInt(elementos);          
+      }
+    }
+
+    function sumarVectores(vector1, vector2, vectorsuma){     
+      for (let index = 0; index < cant; index++){
+        vectorsuma[index] = vector1[index] + vector2[index];
+        
+      }
+    }
+
+    function mostrarVectores(vector1, vector2, vectorsuma){
+      for (let index = 0; index < cant; index++){
+        alert(`Vector 1: ${vector1[index]}`);
+        
+      }
+      for (let index = 0; index < cant; index++){       
+        alert(`Vector 2: ${vector2[index]}`);        
+      }
+      for (let index = 0; index < cant; index++){        
+        alert(`Vector Suma: ${vectorsuma[index]}`);
+      }
+    }
+
+    cargarVectores(vector1,vector2);
+    sumarVectores(vector1,vector2,vectorsuma);
+    mostrarVectores(vector1,vector2,vectorsuma);
+    
   </script>
 
 </body>
