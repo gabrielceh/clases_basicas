@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Objetos</title>
+  </head>
+  <body>
+    <h1>Objetos</h1>
+    <p>
+      Vemos a las variables como lugares donde podemos contener datos o valores. Los objetos son
+      tambien variables, pero estos pueden contener muchas mas variables e incluso funciones, arrays y otros objetos.
+      <br />
+      Para simplificar, los objetos con como una lista de valores, que son escritos como pares de
+      llave:valor. A estos valores los llamamos propidades.
+      <pre>
+        //creacion de objetos
+        const persona = {
+          nombre: "Gabriel",
+          edad: 31,
+          nacionalidad: "Colombiano",
+          "ciudad-nacimiento":'Barranquilla',
+          pasatiempos: ['Videojuegos', 'Anime', 'Programar'],
+          soltero: true,
+          twitter: "@gabrielcehu",
+          instagram: "@gabo_cervantes",
+          saludar: function(tiempo='buenos dias'){
+            console.log(`Hola, ${tiempo}, soy ${this.nombre}`)
+          }
+        }
+      </pre>
+    </p>
+
+    <p>
+      Para acceder a las propiedades, podemos hacerlo de dos maneras:
+      <pre>
+        //notacion del punto:
+        objeto.propiedad
+        ej: personas.nombre
+
+        //notacion de corchetes
+        objeto['propiedad']
+        ej: persona['nombre']
+      </pre>
+      <br>
+      Dentro de los objetos, a las variables se les llama atributos y a las funciones se les llama metodos.
+      <br>
+      Si queremos acceder al atributo dentro de una funcion, accedemos mediante la palabra this. ej: this.nombre
+    </p>
+
+
+    <!-- <script>
+      const persona = {
+        nombre: "Gabriel",
+        edad: 31,
+        nacionalidad: "Colombiano",
+        "ciudad-nacimiento":'Barranquilla',
+        pasatiempos: ['Videojuegos', 'Anime', 'Programar'],
+        soltero: true,
+        twitter: "@gabrielcehu",
+        instagram: "@gabo_cervantes",
+        saludar: function(tiempo='buenos dias'){
+          console.log(`Hola, ${tiempo}, soy ${this.nombre}`)
+        }
+      }
+      console.log(persona)
+      console.log(persona.nombre)
+      console.log(persona["ciudad-nacimiento"])
+      persona.saludar('buenos dias')
+
+    </script> -->
+    <p>
+      Incluso es posible hacer que el valor de un miembro del objeto sea otro objeto. 
+      <pre>
+        //reemplacemos las redes sociales
+        const persona = {
+          nombre: "Gabriel",
+          edad: 31,
+          nacionalidad: "Colombiano",
+          "ciudad-nacimiento":'Barranquilla',
+          pasatiempos: ['Videojuegos', 'Anime', 'Programar'],
+          soltero: true,
+          redes:{
+            twitter: "@gabrielcehu",
+            instagram: "@gabo_cervantes",
+          },
+          saludar: function(tiempo='buenos dias'){
+            console.log(`Hola, ${tiempo}, soy ${this.nombre}`)
+          }
+        }
+
+        //para llamarlas podemos hacer lo sgte:
+        persona.redes.twitter
+        o
+        persona['redes']['twitter']
+      </pre>
+    </p>
+
+    <!-- <script>
+
+      const persona = {
+        nombre : 'Gabriel',
+        edad: 31,
+        nacionalidad: "Colombiano",
+        "ciudad-nacimiento":'Barranquilla',
+        pasatiempos: ['Videojuegos', 'Anime', 'Programar'],
+        soltero: true,
+        redes:{
+          twitter: "@gabrielcehu",
+          instagram: "@gabo_cervantes",
+        },
+        saludar: function(tiempo='buenos dias'){
+          console.log(`Hola, ${tiempo}, soy ${this.nombre}`)
+        }
+      }
+      console.log(persona)
+      console.log(persona.redes.twitter)
+      console.log(persona['redes']['instagram'])
+    </script> -->
+
+    <p>
+      Tambien podemos modificar propiedades o crearlas.
+      <pre>
+        //modificarlas
+        persona.soltero = false
+        o
+        persona['soltero'] = false
+
+        //crearlas 
+        personas.apellido = 'Cervantes'
+        o
+        persona['apellido'] = 'Cervantes'
+
+      </pre>
+    </p>
+
+    <!-- <script>
+      persona.soltero = false 
+      persona['edad'] = 21
+      console.log('modifiamos la propiedad soltero de persona:',persona)
+      persona['apellido'] = 'Cervantes'
+      persona.estatura = 1.75
+      console.log('creamos la propiedad apellido en persona:',persona)
+    </script> -->
+
+    <h2>Metodos mas comunues de los objetos</h2>
+    <h4>Object.key()</h4>
+    <p>Recibe un objeto y muestra todas las llaves(keys) del objeto</p>
+    <!-- <script>
+      console.log('Object.keys(persona):',Object.keys(persona))
+    </script> -->
+
+    <h4>Object.values()</h4>
+    <p>
+      Recibe un objeto y muestra todas los valores(values) del objeto
+    </p>
+    <!-- <script>
+      console.log('Object.values(persona):',Object.values(persona))
+    </script> -->
+
+    <h4>Object.entries()</h4>
+    <p>
+      Recibe un objeto y devuelve todad los pares llaves:valor en forma de array
+    </p>
+    <!-- <script>
+      console.log('Object.entries(persona):', Object.entries(persona))
+    </script> -->
+
+    <h4>hasOwnProperty()</h4>
+    <p>
+      Recibe una propiedadd del objeto y verifica si este la posee o no.
+    </p>
+    <!-- <script>
+      console.log('persona tiene la propiedad "nombre":', persona.hasOwnProperty('nombre'))
+      console.log('persona tiene la propiedad "facebook":', persona.hasOwnProperty('facebook'))
+    </script> -->
+
+    <script>
+      let cant = 2
+      const estudiantes = [] 
+
+      for(let i = 0; i < cant; i++){
+        let nombre = prompt(`Ingrese el nombre del estudiante ${i + 1}:`)
+        let _edad = prompt(`Ingrese la edad del estudiante ${i + 1}:`)
+        let _sexo = prompt(`Ingrese el sexo del estudiante ${i + 1}:`)
+
+        const estudiante = {
+          nombre,
+          edad : _edad,
+          sexo: _sexo
+        }
+
+        estudiantes.push(estudiante)
+      }
+
+
+      console.log(estudiantes)
+      console.log(estudiantes[1].nombre)
+
+      estudiantes.forEach(function(item){
+        console.log(`
+         Nombre: ${item.nombre} 
+         Edad: ${item.edad} 
+         Sexo: ${item.sexo} 
+        `)
+      })
+    </script>
+  </body>
+</html>
